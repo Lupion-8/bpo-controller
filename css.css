@@ -2,6 +2,8 @@
     *00-GLOBAL
     *01-HEADER
     *02-SECTION-PRIMARE
+    *03-SECTION-PLANOS
+    *04-SECTION-CHAMADA
 */
 
 
@@ -19,6 +21,24 @@
     --base3: #ed8534;
     --base4: #ffffff;
     --textsWhite: #ffffff;
+    --colorNone:#5c5c5c;
+}
+
+._section-title,
+._plano-title {
+    font-size: 6vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+._section-lay01,
+._section-lay02,
+._section-lay03{
+    padding: 0vw 5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*=============================================================================================*/
@@ -116,22 +136,15 @@ form input[type="submit"] {
     padding: 3vw 0vw;
 }
 
-form input[type="submit"]:hover{
+form input[type="submit"]:hover {
     background: #ce8d5b;
 }
+
 /*==============================================================================================*/
 
 
 
 /*--02 SECTION-PRIMARE--------------------------------------------------------------------------*/
-._section-lay01 {
-    padding: 0vw 5vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 ._section-lay-title {
     width: 100%;
     display: flex;
@@ -140,11 +153,7 @@ form input[type="submit"]:hover{
     margin: 2vw 0vw;
 }
 
-._section-title{
-    font-size: 6vw;
-    text-align: center;
-    font-weight: bold;
-}
+
 
 ._beneficio-01 {
     display: flex;
@@ -160,7 +169,7 @@ form input[type="submit"]:hover{
     margin: 2vw 0vw;
 }
 
-._benefi-icons i{
+._benefi-icons i {
     font-size: 10vw;
     color: var(--base3);
 }
@@ -176,11 +185,138 @@ form input[type="submit"]:hover{
     text-align: center;
 }
 
-._servs i{
+._servs i {
     font-size: 4vw;
     color: var(--base3);
 }
 
-._servs span{
+._servs span {
     font-size: 5vw;
+}
+
+/*=======================================================================================*/
+
+
+/*--03 SECTION-PLANOS---------------------------------------------------------------*/
+
+._section-lay02 {
+    padding: 5vw;
+    background-image: radial-gradient(at center right, var(--base1) 32%, var(--base2) 100%);
+    padding-bottom: 10vw;
+}
+
+._planos-lay {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--base3);
+    border-radius: 1vw;
+    margin: 5vw 0vw;
+}
+
+._plano-lay-info {
+    text-align: center;
+}
+
+._plano-title {
+    color: var(--textsWhite);
+}
+
+._planos {
+    display: flex;
+    flex-direction: row;
+    color: var(--textsWhite);
+    justify-content: flex-end;
+    background-color: #ed8534;
+    align-items: center;
+}
+
+._planos span {
+    font-size: 4vw;
+    padding: 1vw;
+    font-weight: bold;
+}
+
+._planos> :nth-child(2){
+    margin-right: 5vw;
+}
+._planos> :nth-child(3){
+    margin-right: 5vw;
+}
+._planos> :nth-child(4){
+    font-size: 3vw;
+}
+._planos> :nth-child(5){
+    font-size: 3vw;
+}
+
+._plano-descriptions {
+    color: var(--textsWhite);
+    display: flex;
+    flex-direction: column;
+    /* margin: 3vw 0vw; */
+}
+
+._plano-descriptions span{
+    font-size: 3vw;
+}
+
+._planos-itens {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: var(--base3);
+}
+
+._planos-itens> :nth-child(1) {
+    width: 25vw;
+    margin-left: 3vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+._si-no {
+    width: 15vw;
+    height: 10vw;
+    display: flex;
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: var(--base3);
+    align-items: center;
+    justify-content: center;
+}
+
+.item-none{
+    color: var(--colorNone)
+}
+/*=================================================================================================*/
+
+
+
+/*--04-SECTION-CHAMADA-----------------------------------------------------------------------------*/
+
+._section-lay03 {
+    padding: 5vw;
+    padding-bottom: 10vw;
+}
+._chamada span{
+    font-size: 5vw;
+}
+._lay-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10vw 0vw;
+}
+
+._btn-blue{
+    color:  var(--textsWhite);
+    font-size: 5vw;
+    background-color: var(--base1);
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    padding: 3vw;
 }
