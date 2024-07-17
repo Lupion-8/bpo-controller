@@ -1,0 +1,18 @@
+.wapp {
+    position: fixed;
+    right: 1vw;
+    bottom: 3.843vw;
+    width: 15vw;
+    height: 15vw;
+    background-image: url(https://controllerconsultores.com.br/assets/imgs/wpp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    display: inline;
+    z-index: 1000;
+    cursor: pointer;
+}

@@ -21,11 +21,12 @@
     --base3: #ed8534;
     --base4: #ffffff;
     --textsWhite: #ffffff;
-    --colorNone:#5c5c5c;
+    --colorNone: #5c5c5c;
 }
 
 ._section-title,
-._plano-title {
+._plano-title,
+._chamada span {
     font-size: 6vw;
     text-align: center;
     font-weight: bold;
@@ -33,13 +34,90 @@
 
 ._section-lay01,
 ._section-lay02,
-._section-lay03{
+._section-lay03 {
     padding: 0vw 5vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+._lay-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10vw 0vw;
+}
+
+._btn-blue {
+    color: var(--textsWhite);
+    font-size: 5vw;
+    background-color: var(--base1);
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    padding: 3vw;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+}
+
+._btn-blue:hover {
+    transition: 500ms;
+    background-color: var(--base2);
+}
+
+html::-webkit-scrollbar {
+    width: 1vw
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--base1);
+    width: 1vw
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--cor-white)
+}
+
+
+@media (min-width: 820px) {
+
+    ._section-title,
+    ._plano-title,
+    ._chamada span {
+        font-size: 4vw;
+    }
+
+    ._btn-blue {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    ._lay-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5vw 0vw;
+    }
+}
+
+
 
 /*=============================================================================================*/
 
@@ -134,10 +212,172 @@ form input[type="submit"] {
     border-style: none;
     border-radius: 1vw;
     padding: 3vw 0vw;
+    cursor: pointer;
 }
 
 form input[type="submit"]:hover {
     background: #ce8d5b;
+}
+
+@media (min-width: 820px) {
+    img._logo {
+        margin: 2.5vw 0vw;
+        max-width: 40vw;
+    }
+
+    ._header-background {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    header ._header-texts h1 {
+        font-size: 5vw;
+    }
+
+    header ._header-texts h2 {
+        font-size: 3vw;
+    }
+
+    ._header-form span {
+        font-size: 3vw;
+    }
+
+    form input {
+        padding: 1vw;
+        font-size: 2.5vw;
+        margin: 1vw;
+    }
+
+    ._header-form {
+        max-width: 50vw;
+    }
+
+    ._header-lay01 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+    ._header-lay01 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ._header-background {
+        height: 50vw;
+        width: 50vw;
+        position: absolute;
+        right: 0;
+    }
+
+    img._logo {
+        margin: 2.5vw 0vw;
+        max-width: 20vw;
+    }
+
+    ._header-form {
+        z-index: 1;
+    }
+
+    header ._header-texts h1 {
+        font-size: 4vw;
+        text-align: start;
+    }
+
+    header ._header-texts h2 {
+        font-size: 2vw;
+        text-align: start;
+    }
+
+    ._header-elements {
+        align-items: flex-start;
+    }
+
+    ._header-form span {
+        font-size: 2vw;
+    }
+
+    form input {
+        padding: 0.3vw;
+        font-size: 2vw;
+    }
+
+    form input[type="submit"] {
+        border-radius: 0.5vw;
+        padding: 1vw 0vw;
+    }
+
+    ._header-background {
+        height: 60vw;
+        width: 60vw;
+        position: absolute;
+        right: 0;
+        background-image: url(https://controllerconsultores.com.br/assets/imgs/header-background.png);
+        background-position-x: -36vw;
+        background-size: 101.4vw;
+        margin: 0vw;
+    }
+}
+
+
+@media (min-width: 1366px) {
+
+    header {
+        padding-bottom: 0vw;
+        height: 100vh;
+    }
+
+    ._header-lay01 {
+        padding: 3vw 5vw;
+    }
+
+    ._header-imgs {
+        width: 80%;
+        text-align: center;
+    }
+
+    img._logo {
+        margin: 2.5vw 0vw;
+        max-width: 18vw;
+    }
+
+    header ._header-texts h1 {
+        font-size: 3vw;
+        width: 90%;
+    }
+
+    header ._header-texts h2 {
+        font-size: 1.5vw;
+        width: 90%;
+    }
+
+    ._header-background {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-image: url(https://controllerconsultores.com.br/assets/imgs/header-background.png);
+        background-position-x: 1vw;
+        background-size: cover;
+        top: 0vw;
+    }
+
+    ._header-form {
+        position: relative;
+        top: 2vw;
+    }
+
+    ._header-form span {
+        font-size: 1.5vw;
+    }
+
+    form input {
+        padding: 0.5vw;
+        font-size: 1.2vw;
+        margin: 0.4vw;
+    }
+
 }
 
 /*==============================================================================================*/
@@ -172,6 +412,7 @@ form input[type="submit"]:hover {
 ._benefi-icons i {
     font-size: 10vw;
     color: var(--base3);
+    margin: 5vw 0vw;
 }
 
 
@@ -192,6 +433,63 @@ form input[type="submit"]:hover {
 
 ._servs span {
     font-size: 5vw;
+}
+
+
+@media (min-width: 820px) {
+    ._benefi-icons i {
+        font-size: 5vw;
+    }
+
+    ._benefi-icons span {
+        font-size: 3.5vw;
+    }
+
+    ._servs span {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    ._section-title,
+    ._plano-title,
+    ._chamada span {
+        font-size: 3vw;
+    }
+
+    ._bene-lay {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ._benefi-icons i {
+        font-size: 4vw;
+    }
+
+
+    ._benefi-icons span {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    ._servs span {
+        font-size: 2vw;
+    }
+
+    ._servs i {
+        font-size: 2vw;
+    }
+
+    ._beneficio {
+        width: 30vw;
+    }
+
+    ._btn-blue {
+        font-size: 2vw;
+        padding: 2vw;
+    }
+
 }
 
 /*=======================================================================================*/
@@ -237,16 +535,19 @@ form input[type="submit"]:hover {
     font-weight: bold;
 }
 
-._planos> :nth-child(2){
+._planos> :nth-child(2) {
     margin-right: 5vw;
 }
-._planos> :nth-child(3){
+
+._planos> :nth-child(3) {
     margin-right: 5vw;
 }
-._planos> :nth-child(4){
+
+._planos> :nth-child(4) {
     font-size: 3vw;
 }
-._planos> :nth-child(5){
+
+._planos> :nth-child(5) {
     font-size: 3vw;
 }
 
@@ -257,7 +558,7 @@ form input[type="submit"]:hover {
     /* margin: 3vw 0vw; */
 }
 
-._plano-descriptions span{
+._plano-descriptions span {
     font-size: 3vw;
 }
 
@@ -288,9 +589,106 @@ form input[type="submit"]:hover {
     justify-content: center;
 }
 
-.item-none{
+.item-none {
     color: var(--colorNone)
 }
+
+@media (min-width: 1024px) {
+    ._planos span {
+        font-size: 3vw;
+    }
+
+    ._plano-descriptions span {
+        font-size: 2vw;
+    }
+
+    ._planos-itens> :nth-child(1) {
+        justify-content: flex-start;
+        width: 29vw;
+    }
+
+    ._si-no {
+        width: 15vw;
+        height: 5vw;
+    }
+
+}
+
+@media (min-width: 1366px) {
+
+    ._section-title,
+    ._plano-title,
+    ._chamada span {
+        font-size: 30px;
+    }
+
+    ._benefi-icons {
+        margin: 0vw;
+    }
+
+    ._benefi-icons i {
+        font-size: 3vw;
+        margin: 1vw;
+    }
+
+    ._planos {
+        justify-content: space-between;
+    }
+
+    ._servs {
+        margin: 2vw 0vw;
+        text-align: center;
+    }
+
+    ._servs i,
+    ._servs span {
+        font-size: 1.5vw;
+    }
+
+    ._lay-button {
+        margin: 2vw;
+    }
+
+    ._btn-blue {
+        font-size: 1.5vw;
+        padding: 1vw;
+        border-radius: 0.5vw;
+    }
+
+    ._planos-lay {
+        border-radius: 0.5vw;
+        margin: 3vw 0vw;
+        border-width: 2px;
+    }
+
+    ._planos span {
+        font-size: 2vw;
+        padding: 0.5vw;
+    }
+
+    ._planos-itens> :nth-child(1) {
+        width: 20vw;
+        font-size: 1vw;
+    }
+
+    ._plano-descriptions span {
+        font-size: 1vw;
+    }
+
+    ._si-no {
+        width: 15vw;
+        height: 2vw;
+    }
+
+    ._planos> :nth-child(5) {
+        font-size: 2vw;
+    }
+
+    ._planos> :nth-child(4) {
+        font-size: 2vw;
+    }
+}
+
 /*=================================================================================================*/
 
 
@@ -301,22 +699,33 @@ form input[type="submit"]:hover {
     padding: 5vw;
     padding-bottom: 10vw;
 }
-._chamada span{
-    font-size: 5vw;
-}
-._lay-button{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 10vw 0vw;
+
+._chamada {
+    text-align: center;
 }
 
-._btn-blue{
-    color:  var(--textsWhite);
+
+
+._chamada p {
     font-size: 5vw;
-    background-color: var(--base1);
-    outline: none;
-    border: none;
-    border-radius: 1vw;
-    padding: 3vw;
+    margin: 5vw 0vw;
+}
+
+
+@media (min-width: 1024px) {
+    ._chamada p {
+        font-size: 2vw;
+        margin: 3vw 0vw;
+    }
+}
+
+@media (min-width: 1366px) {
+    ._chamada p {
+        font-size: 1.5vw;
+        margin: 1vw 0vw;
+    }
+
+    ._section-lay03 {
+        padding-bottom: 0vw;
+    }
 }

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terceirização financeira</title>
     <link rel="stylesheet" type="text/css" href="./css.css" />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
+    <link rel="stylesheet" type="text/css" href="./wpp.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,20 +30,20 @@
 
                     <div class="_header-background"> </div>
 
-                    <div class="_header-texts">
+                    <div id="inicio" class="_header-texts">
                         <h1>SUA EMPRESA PRECISA DE VOCÊ COM MAIS TEMPO</h1>
                         <h2>Liberte-se da burocracia das finanças terceirizando a sua Gestão Financeira com uma empresa
                             séria e comprometida com seu sucesso.</h2>
                     </div>
                 </div>
 
-                <div class="_header-form">
+                <div  class="_header-form">
                     <span>Descubra como a Controller é capaz de ajudar a sua empresa!</span>
                     <form class="_formulario" method="post">
                         <input type="text" placeholder="Seu nome" />
-                        <input type="number" placeholder="Seu Telefone" />
-                        <input type="email" placeholder="Seu E-mail" />
-                        <input type="submit" value="Fale com um especiaista" />
+                        <input type="tel" placeholder="Seu telefone" />
+                        <input type="email" placeholder="Seu e-mail" />
+                        <input type="submit" value="Enviar formulário" />
                     </form>
 
                 </div>
@@ -52,7 +55,7 @@
                 <span class="_section-title">BENEFÍCIOS DOS NOSSOS SERVIÇOS</span>
             </div>
 
-            <div>
+            <div class="_bene-lay">
                 <div class="_beneficio">
                     <div class="_benefi-icons">
                         <i class="fas fa-rocket icons01"></i>
@@ -143,7 +146,7 @@
                 </div>
             </div>
             <div class="_lay-button">
-                <button class="_btn-blue">Fale com um especialista</button>
+                <a class="page-scroll" href="#inicio"><button class="_btn-blue">Fale com um especialista</button><br></a>
             </div>
         </section>
 
@@ -152,7 +155,7 @@
                 <span class="_plano-title">CONFIRA NOSSOS PLANOS</span>
             </div>
             <div class="_planos-lay">
-                <div class="_planos"> 
+                <div class="_planos">
                     <span>Serviços Recorrentes​</span>
                     <span>Gold</span>
                     <span>Vip</span>
@@ -167,7 +170,7 @@
                         <span class="_si-no">Sim</span>
                         <span class="_si-no">Sim</span>
                     </div>
-                   
+
                     <div class="_planos-itens">
                         <span>Controle de Contas a Receber​</span>
                         <span class="_si-no">Sim</span>
@@ -278,26 +281,42 @@
         <section class="_section-lay03">
             <div class="_chamada">
                 <span> AGILIZE O SEU TEMPO</span>
+                <p>Garanta mais tempo para crescer, deixando suas finanças em nossas mãos. Entre em contato conosco hoje e descubra como podemos ajudar sua empresa a prosperar!</p>
             </div>
             <div class="_lay-button">
-                <button class="_btn-blue">Fale com um especialista</button>
+                <a class="page-scroll" href="#inicio"><button class="_btn-blue">Fale com um especialista</button><br></a>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <span>enderecos</span>
-            <span>enderecos</span>
-            <span>enderecos</span>
-            <span>enderecos</span>
-            <span>enderecos</span>
+        <div class="_cont">
+            <p class="_cont-info">Conheça-nos!</p>
+            <p class="_cont-cidade">Petrolina - PE</p>
+            <p class="_cont-endere"><i class="fas _cont-icon-size fa-map-marker-alt"></i>R. Dr. Manoel Borba, 1727 - Centro,
+                Petrolina - PE, 56302-070</p>
+            <p class="_cont-email"><i class="fas _cont-icon-size fa-envelope"></i>contato@controllerconsultores.com.br</p>
+            <p class="_cont-tele tel-link"><i class="fab _cont-icon-size fa-whatsapp"></i>+55 (87) 3861-0452</p>
+            <p class="_cont-hora"><i class="fas fa-clock _cont-icon-size"></i>08:00-12:00 13:00-18:00 </p>
         </div>
-
-        <div>
-             ¹²³£
-        </div>    
+        <div class="sos"><a href="https://www.facebook.com/controllercontadores" aria-label="Nossa pagina do facebook"
+                target="_blank"><i class="fab fa-facebook-f iconRedes"></i></a><a
+                href="https://twitter.com/Controllerofc iconRedes" aria-label="Nossa pagina do twitter"
+                target="_blank"><i class="fab fa-twitter iconRedes"></i></a><a
+                href="https://www.instagram.com/controlleroficial/" aria-label="Nossa pagina do instagram"
+                target="_blank"><i class="fab fa-instagram iconRedes"></i></a><a
+                href="https://www.linkedin.com/in/controller-contadores-associados-514781152/?original_referer="
+                aria-label="Nossa pagina do linkedin" target="_blank"><i class="fab fa-linkedin iconRedes"></i></a><a
+                href="https://controllerconsultores.com.br/blog/" aria-label="Nossa pagina do blog" target="_blank"><i
+                    class="fab fa-blogger iconRedes"></i></a></div>
+        <div class="dev">Copyright 2024 – CONTROLLER – CONTADORES E AUDITORES ASSOCIADOS® Todos os direitos reservados.
+        </div>
+        <div class="wapp"></div>
+       
     </footer>
     <script src="./js.js"></script>
+    <script src="https://controllerconsultores.com.br/assets/javascripts/jquery-1.12.4.min.js"></script>
+    <script src="https://controllerconsultores.com.br/assets/javascripts/jquery.easing.min.js"></script>
+    <script src="https://controllerconsultores.com.br/assets/javascripts/scrolling-nav.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,139 @@
+footer {
+    padding: 15vw 0vw 0vw;
+    background-image: url(https://controllerconsultores.com.br/assets/imgs/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: var(--textsWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+._cont {
+    margin: 7vw 5vw 9vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+._cont-info {
+    font-size: 7vw;
+    font-weight: 600;
+}
+
+._cont-cidade {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
+    color: white;
+}
+
+._cont-endere,
+._cont-email,
+._cont-tele,
+._cont-hora {
+    font-size: 3.5vw;
+    margin: 1vw 0vw;
+}
+
+._cont-icon-size {
+    margin-right: 1vw;
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+.iconRedes {
+    color: white;
+    font-size: 7vw;
+    margin: 1vw;
+}
+
+.dev {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    font-size: 3vw;
+}
+
+@media (min-width: 820px) {
+    ._cont-info {
+        font-size: 5vw;
+    }
+
+    ._cont-endere,
+    ._cont-email,
+    ._cont-tele,
+    ._cont-hora {
+        font-size: 3vw;
+    }
+
+    ._cont-icon-size {
+        font-size: 4vw;
+    }
+
+    .dev {
+        border-top: 1px solid rgba(255, 255, 255, .3);
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    ._cont-info {
+        font-size: 4vw;
+    }
+
+    ._cont-cidade {
+        font-size: 3vw;
+    }
+
+    ._cont-endere,
+    ._cont-email,
+    ._cont-tele,
+    ._cont-hora {
+        font-size: 2vw;
+    }
+
+    ._cont-icon-size {
+        font-size: 3vw;
+    }
+
+    .iconRedes {
+        font-size: 5vw;
+    }
+
+    .dev {
+        border-top: 1px solid rgba(255, 255, 255, .3);
+        font-size: 1.8vw;
+    }
+}
+
+@media (min-width: 1366px) {
+
+    footer {
+        padding: 5vw 0vw 0vw;
+    }
+    ._cont {
+        margin: 5vw 5vw 1vw;
+    }
+
+    ._cont-info {
+        font-size: 2vw;
+    }
+
+    ._cont-cidade {
+        font-size: 1.5vw;
+    }
+    ._cont-endere, ._cont-email, ._cont-tele, ._cont-hora {
+        font-size: 1vw;
+        margin: 0.3vw;
+    }
+    ._cont-icon-size {
+        font-size: 1vw;
+    }
+    .iconRedes {
+        font-size: 2vw;
+    }
+    .dev {
+        font-size: 1vw;
+    }
+}
