@@ -24,7 +24,7 @@ const obj_planos = {
         <li>Quantidade de bancos​, 1</li>
     </ul>
     <div class="card-button">
-        <button>Fale conosco</button>
+        <a class="page-scroll" href="#inicio"><button class="_btn-blue">Fale conosco</button><br></a>
     </div>
 </div>
 `,
@@ -53,8 +53,8 @@ const obj_planos = {
         <li>Lançamentos, até​ 100</li>
         <li>Quantidade de bancos​, 2</li>
     </ul>
-    <div class="card-button">
-        <button>Fale conosco</button>
+     <div class="card-button">
+        <a class="page-scroll" href="#inicio"><button class="_btn-blue">Fale conosco</button><br></a>
     </div>
 </div>
 `,
@@ -84,7 +84,7 @@ const obj_planos = {
         <li>Quantidade de bancos​, 3</li>
     </ul>
     <div class="card-button">
-        <button>Fale conosco</button>
+        <a class="page-scroll" href="#inicio"><button class="_btn-blue">Fale conosco</button><br></a>
     </div>
 </div>
 `,
@@ -113,8 +113,8 @@ const obj_planos = {
         <li>Lançamentos, até​ 450</li>
         <li>Quantidade de bancos​, +4</li>
     </ul>
-    <div class="card-button">
-        <button>Fale conosco</button>
+     <div class="card-button">
+        <a class="page-scroll" href="#inicio"><button class="_btn-blue">Fale conosco</button><br></a>
     </div>
 </div>
 `,
@@ -244,13 +244,36 @@ const obj_planos = {
 </div>
 `};
 
-document.addEventListener("DOMContentLoaded", function () {
+
+function posLoader(){
     const elements = document.querySelectorAll("._si-no");
     elements.forEach(function (element) {
         if (element.textContent.trim() === "Não") {
             element.classList.add("item-none");
         }
     });
+}
+
+function setScroll(){
+        //scrolimg
+        $((function() {
+            $('a.page-scroll[href*="#"]:not([href="#"])').on("click", (function() {
+                if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+                    var t = $(this.hash);
+                    if ((t = t.length ? t : $("[name=" + this.hash.slice(1) + "]")).length)
+                        return $("html, body").animate({
+                            scrollTop: t.offset().top - 60
+                        }, 1200, "easeInOutExpo"),
+                        !1
+                }
+            }
+            ))
+        }
+        ));
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    
 
     document.querySelector('.wapp').addEventListener('click', () => {
         window.open(`https://api.whatsapp.com/send/?phone=5587981025310&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+cont%C3%A1bil.+&type=phone_number&app_absent=0`);
@@ -261,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         document.querySelector('.plano-lay').innerHTML = obj_planos.tabela;
     }
-
+    posLoader();
 
 
 
@@ -278,9 +301,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.querySelector('.maiores').innerHTML += obj_planos.vip;
                     document.querySelector('.maiores').innerHTML += obj_planos.premium;
                     document.querySelector('.maiores').innerHTML += obj_planos.diamond;
-                    
+                    setScroll();
                 }else{
                     document.querySelector('.maiores').innerHTML = obj_planos[e.target.id];
+                    posLoader();
                 }
                 for (let index = 0; index < planos.length; index++) {
                     if (planos[index].id == e.target.id) {
@@ -295,6 +319,9 @@ document.addEventListener("DOMContentLoaded", function () {
             element.addEventListener('click', (e) => {
                 console.log(e.target.id)
                 document.querySelector('.plano-lay').innerHTML = obj_planos[e.target.id];
+                if(e.target.id == 'tabela'){
+                    posLoader();
+                }
 
                 for (let index = 0; index < planos.length; index++) {
                     if (planos[index].id == e.target.id) {
@@ -303,6 +330,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         planos[index].classList.remove('_plaselect');
                     }
                 }
+                setScroll();
             })
         }
     });

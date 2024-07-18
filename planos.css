@@ -194,3 +194,65 @@
 
     
 }
+
+
+@media (min-width: 1280px){
+    ._selec-plano span {
+        font-size: 1vw;
+        padding: 0.5vw 0.3vw;
+        margin: 1vw;
+    }
+
+    ._planos-lay.plano-lay {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._tabela {
+        border-radius: 0vw;
+    }
+
+    .pricing-card {
+        border-radius: 1vw;
+        width: 20vw;
+        margin: 0vw 1vw;
+    }
+
+    .card-header h3 {
+        font-size: 2vw;
+    }
+
+    .card-header {
+        padding: 0.3vw 1vw;
+    }
+
+    .card-features li {
+        font-size: 1vw;
+        padding: 5px 0;
+    }
+
+    .card-button {
+        padding: 0vw;
+    }
+
+    .card-button button {
+        padding: 0.5vw 1vw;
+        border-radius: 0.3vw;
+        margin: 1vw 0vw 1vw 0vw;
+        font-size: 1vw;
+    }
+
+    ._section-lay02 {
+        padding: 3vw;
+    }
+
+    ._planos-lay {
+        margin: 0vw;
+    }
+}
+
+
+@media (min-width: 1366px) and (max-width: 1280px){
+
+
+}
