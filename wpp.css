@@ -16,3 +16,19 @@
     z-index: 1000;
     cursor: pointer;
 }
+
+
+
+@media (min-width: 1024px) {
+    .wapp {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+@media (min-width: 1366px) {
+    .wapp {
+        width: 5vw;
+        height: 5vw;
+    }
+}

@@ -22,6 +22,10 @@
     --base4: #ffffff;
     --textsWhite: #ffffff;
     --colorNone: #5c5c5c;
+    --gold: #ffd700; /* Cor dourada para Gold */
+    --vip: #ff4500; /* Cor laranja para Vip */
+    --premium: #c0c0c0; /* Cor prateada para Premium */
+    --diamond: #b9f2ff; /* Cor azul claro para Diamond */
 }
 
 ._section-title,
@@ -505,11 +509,9 @@ form input[type="submit"]:hover {
 
 ._planos-lay {
     width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--base3);
-    border-radius: 1vw;
     margin: 5vw 0vw;
+    display: flex;
+    justify-content: center;
 }
 
 ._plano-lay-info {
@@ -591,6 +593,18 @@ form input[type="submit"]:hover {
 
 .item-none {
     color: var(--colorNone)
+}
+
+._selec-plano {
+    margin: 3vw;
+}
+
+._selec-plano span {
+    font-size: 3vw;
+    background-color: var(--base4);
+    padding: 2vw 2.5vw;
+    margin: 0vw 1vw;
+    border-radius: 50vw;
 }
 
 @media (min-width: 1024px) {

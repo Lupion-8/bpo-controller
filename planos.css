@@ -1,0 +1,196 @@
+.pricing-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.card-header {
+    background: var(--gold);
+    color: #ffffff;
+    padding: 3vw;
+    position: relative;
+}
+
+._gold {
+    background: var(--gold);
+}
+
+._vip {
+    background: var(--vip);
+}
+
+._premium {
+    background: var(--premium);
+}
+
+._diamond {
+    background: var(--diamond);
+}
+
+
+.card-header h3 {
+    margin: 0;
+    font-size: 7vw;
+}
+
+.popular {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #9c27b0;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*.card-price {
+    background: #e0f7fa;
+    padding: 20px 10px;
+}
+.card-price h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #000;
+}*/
+
+.card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+.card-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    font-size: 4vw;
+}
+
+.card-features li:last-child {
+    border-bottom: none;
+}
+
+.card-button {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.card-button button {
+    background: #3a3a8c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 4vw;
+    animation: pulseButton 2s infinite;
+}
+
+.card-button button:hover {
+    background: #2c2c6a;
+}
+
+._plaselect {
+    border-style: solid;
+    border-color: var(--base3);
+}
+
+._tabela {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--base3);
+    border-radius: 1vw;
+}
+
+
+@media (min-width: 1024px) {
+    ._selec-plano span {
+        font-size: 2vw;
+        padding: 1vw 1.5vw;
+        margin: 0vw 1.5vw;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+        border-radius: 2vw;
+        width: 70vw;
+        margin: 0vw 2vw;
+    }
+
+    .card-header h3 {
+        font-size: 5vw;
+    }
+
+    .card-features li {
+        font-size: 4vw;
+    }
+
+    .card-button button {
+        padding: 1vw;
+        border-radius: 1vw;
+        margin: 6vw;
+    }
+
+    ._planos-lay {
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    ._tabela {
+        width: -webkit-fill-available;
+    }
+
+    .maiores {
+        display: flex;
+        flex-direction: row;
+    }
+
+    span#gold {
+        color: white;
+    }
+    
+    span#gold:after {
+        content: 'Planos'; /* Adiciona o texto 'Planos' depois do conteúdo do span */
+        color: #333;
+    }
+    
+
+    span#vip, span#premium, span#diamond{
+        display: none;
+    }
+
+    span#tabela {
+        color: white;
+    }
+    
+    span#tabela:after {
+        content: 'Tabela'; /* Adiciona o texto 'Planos' depois do conteúdo do span */
+        color: #333;
+    }
+
+    ._planos-lay {
+        width: auto;
+    }
+
+    ._planos-lay::-webkit-scrollbar {
+        width: 0vw
+    }
+    
+    ._planos-lay::-webkit-scrollbar-thumb {
+        background-color: var(--base1);
+        width: 0vw
+    }
+    
+    ._planos-lay::-webkit-scrollbar-track {
+        background: var(--cor-white)
+    }
+
+    
+}
