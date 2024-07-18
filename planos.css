@@ -249,6 +249,33 @@
     ._planos-lay {
         margin: 0vw;
     }
+
+    .maiores * span {
+        font-size: 1.5vw;
+    }
+
+    ._si-no {
+        width: 12vw;
+        height: 3vw;
+    }
+
+    ._planos> :nth-child(4), ._planos> :nth-child(5) {
+        font-size: 1.5vw;
+    }
+
+    ._planos {
+        justify-content: space-evenly;
+    }
+
+    ._planos> :nth-child(1) {
+        width: 29vw;
+    }
+
+    .wapp {
+        width: 8vw;
+        height: 8vw;
+    }
+    
 }
 
 
