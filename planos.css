@@ -270,16 +270,15 @@
     ._planos> :nth-child(1) {
         width: 29vw;
     }
-
-    .wapp {
-        width: 8vw;
-        height: 8vw;
-    }
-    
 }
 
 
-@media (min-width: 1366px) and (max-width: 1280px){
-
-
+@media (min-width: 1366px){
+    ._si-no {
+        width: 100px;
+        height: 30px;
+    }
+    .maiores * span {
+        font-size: 1vw;
+    }
 }
