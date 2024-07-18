@@ -281,4 +281,55 @@
     .maiores * span {
         font-size: 1vw;
     }
+
+    ._planos> :nth-child(4), ._planos> :nth-child(5) {
+        font-size: 1vw;
+    }
+
+    ._planos> :nth-child(1) {
+        width: 24vw;
+    }
+
+    ._planos> :nth-child(3) {
+        margin-right: 3vw;
+    }
+    ._planos {
+        justify-content: left;
+    }
+    ._planos> :nth-child(4), ._planos> :nth-child(5) {
+        margin-left: 1vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 600px) {
+    ._planos-lay {
+        width: 100%;
+    }
+
+    .card-header h3 {
+        font-size: 3vw;
+    }
+
+    .card-header {
+        padding: 1vw;
+    }
+    .card-features li {
+        font-size: 1.2vw;
+        padding: 5px;
+    }
+    .pricing-card {
+        border-radius: 1vw;
+        width: 30vw;
+        margin: 0vw 1vw;
+    }
+
+    .card-button button {
+        font-size: 2vw;
+        padding: 1vw;
+        border-radius: 0.5vw;
+        margin: 0.3vw;
+    }
+    ._planos-lay {
+        width: auto;
+    }
 }

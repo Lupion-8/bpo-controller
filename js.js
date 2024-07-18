@@ -296,13 +296,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.innerWidth >= 1024) {
             element.addEventListener('click', (e) => {
                 if(e.target.id == 'gold'){
-                   
+                    document.querySelector('.plano-lay').style.width = '100%';
                     document.querySelector('.maiores').innerHTML = obj_planos.gold;
                     document.querySelector('.maiores').innerHTML += obj_planos.vip;
                     document.querySelector('.maiores').innerHTML += obj_planos.premium;
                     document.querySelector('.maiores').innerHTML += obj_planos.diamond;
                     setScroll();
                 }else{
+                    document.querySelector('.plano-lay').style.width = 'auto%';
                     document.querySelector('.maiores').innerHTML = obj_planos[e.target.id];
                     posLoader();
                 }

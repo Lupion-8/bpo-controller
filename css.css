@@ -20,6 +20,7 @@
     --base2: #242670;
     --base3: #ed8534;
     --base4: #ffffff;
+    --base5: #000000;
     --textsWhite: #ffffff;
     --colorNone: #5c5c5c;
     --gold: #ffd700; /* Cor dourada para Gold */
@@ -130,10 +131,9 @@ html::-webkit-scrollbar-track {
 
 /*--01 HEADER-----------------------------------------------------------------------------------*/
 header {
-    background-image: radial-gradient(at center right, var(--base1) 32%, var(--base2) 100%);
+    background: linear-gradient(356deg, var(--base1), var(--base5));
     padding-bottom: 10vw;
 }
-
 ._header-lay01 {
     padding: 0vw 5vw;
 }
@@ -503,8 +503,8 @@ form input[type="submit"]:hover {
 
 ._section-lay02 {
     padding: 5vw;
-    background-image: radial-gradient(at center right, var(--base1) 32%, var(--base2) 100%);
     padding-bottom: 10vw;
+    background: linear-gradient(213deg, var(--base1), var(--base5));
 }
 
 ._planos-lay {
@@ -605,6 +605,7 @@ form input[type="submit"]:hover {
     padding: 2vw 2.5vw;
     margin: 0vw 1vw;
     border-radius: 50vw;
+    cursor: pointer;
 }
 
 @media (min-width: 1024px) {
