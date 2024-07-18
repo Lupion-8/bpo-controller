@@ -121,7 +121,7 @@
     .pricing-card {
         max-width: 100%;
         border-radius: 2vw;
-        width: 70vw;
+        width: 60vw;
         margin: 0vw 2vw;
     }
 
@@ -130,7 +130,7 @@
     }
 
     .card-features li {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .card-button button {
