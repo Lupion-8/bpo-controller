@@ -1,0 +1,243 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
+}
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+header {
+    background: linear-gradient(356deg, var(--base1), var(--base5));
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 17vw;
+    margin-top: 5vw;
+}
+
+
+
+.layout_01 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.layout_02,
+.layout_03 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: var(--textsWhite);
+    justify-content: center;
+}
+
+.layout_02 {
+    padding: 5vw 0.5vw 0vw 5vw;
+}
+
+.layout_03 {
+    padding: 5vw 5vw 0vw 0.5vw;
+}
+
+
+h1 {
+    font-size: 2.5vw;
+    margin-top: 8vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5vw;
+    margin: 2vw 0vw;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.btn_white {
+    transition: 500ms;
+    background-color: var(--base4);
+    outline: none;
+    border: none;
+    border-radius: 0.3vw;
+    padding: 0.8vw;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.frame {
+    background-image: url(https://controllerconsultores.com.br/assets/imgs/frame-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: bottom;
+}
+
+
+@media (max-width: 1280px) {
+   header{
+    height: 79vh;
+   }
+}
+
+@media (min-width: 768px) and  (min-height: 1024px)  {
+    header{
+     height: 37vh;
+    }
+    .logo img{
+        width: 20vw;
+        margin-left: 1vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    .btn_white {
+        font-size: 2vw;
+    }
+ }
+
+@media (max-width: 744px) {
+    header {
+        height: 100vh;
+    }
+
+    .frame {
+
+        background-position: top;
+    }
+    
+    .layout_01 {
+        flex-direction: column-reverse;
+        padding: 0vw 6vw;
+    }
+
+    .layout_02,
+    .layout_03 {
+        padding: 0vw;
+        height: 40%;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-left: 0vw;
+        margin-top: 5vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .texts {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 7vw;
+        margin-top: 2vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    header .btn_white {
+        font-size: 5vw;
+        padding: 2vw;
+        border-radius: 1vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .logo img {
+        width: 150px
+    }
+
+    .layout_03 {
+        height: 43%;
+    }
+
+    h1{
+        font-size: 23px;
+    }
+
+    h2{
+        font-size: 15px;
+        margin: 5vw 0vw;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .logo img {
+        width: 35vw;
+    }
+
+    .layout_03 {
+        height: 43%;
+    }
+
+    h1{
+        font-size: 23px;
+    }
+
+    h2{
+        font-size: 15px;
+        margin: 5vw 0vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo img {
+        width: 30vw;
+    }
+
+    .layout_03 {
+        height: 45%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 11px;
+        margin: 2vw 0vw;
+    }
+    header .btn_white{
+        font-size: 12px;
+    }
+}
+
