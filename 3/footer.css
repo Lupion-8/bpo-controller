@@ -55,27 +55,44 @@ footer {
     font-size: 3vw;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 712px) {
     ._cont-info {
         font-size: 30px;
     }
+
     ._cont-cidade {
         font-size: 20px;
     }
-    ._cont-endere, ._cont-email, ._cont-tele, ._cont-hora {
+
+    ._cont-endere,
+    ._cont-email,
+    ._cont-tele,
+    ._cont-hora {
         font-size: 15px;
         margin: 5px 0px;
     }
+
     ._cont-icon-size {
         font-size: 22px;
     }
+
     .iconRedes {
         font-size: 40px;
         margin: 20px;
     }
+
     .dev {
         border-top: 1px solid rgba(255, 255, 255, .3);
         font-size: 14px;
         margin: 2px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    ._cont {
+        margin: 0vw 5vw 2vw;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
     }
 }

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terceirização financeira</title>
-    <link rel="stylesheet" type="text/css" href="./style.css?v=01"/>
-    <link rel="stylesheet" type="text/css" href="./footer.css?v=01"/> 
-    <link rel="stylesheet" type="text/css" href="./medias.css?v=01"/> 
-    
+    <link rel="stylesheet" type="text/css" href="./style.css?v=01" />
+    <link rel="stylesheet" type="text/css" href="./footer.css?v=01" />
+    <link rel="stylesheet" type="text/css" href="./medias.css?v=01" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -129,18 +129,6 @@
                     </div>
 
                     <div class="servs">
-                        <span>ENVIO DE RELATÓRIOS</span>
-                        <div class="serv_description">
-                            <p>✔️ DRE Gerencial</p>
-                            <p>✔️ Fluxo de Caixa</p>
-                            <p>✔️ Relatório de Clientes inadimplentes</p>
-                            <p>✔️ Relatório de contas atrasadas</p>
-                            <p>✔️ Analise de recebimentos</p>
-                            <p>✔️ Relatórios Customizados</p>
-                        </div>
-                    </div>
-
-                    <div class="servs">
                         <span>ESCALABILIDADE OPORTUNIDADE</span>
                         <div class="serv_description">
                             <p>✔️ Sua empresa cresce junto conosco!</p>
@@ -149,6 +137,18 @@
                             <p>✔️ Posição Diária das movimentações financeiras</p>
                             <p>✔️ Através do auxilio na gestão financeira com o serviço de Terceirização </p>
                             <p>✔️ financeira que oferecemos</p>
+                        </div>
+                    </div>
+
+                    <div class="servs">
+                        <span>ENVIO DE RELATÓRIOS</span>
+                        <div class="serv_description">
+                            <p>✔️ DRE Gerencial</p>
+                            <p>✔️ Fluxo de Caixa</p>
+                            <p>✔️ Relatório de Clientes inadimplentes</p>
+                            <p>✔️ Relatório de contas atrasadas</p>
+                            <p>✔️ Analise de recebimentos</p>
+                            <p>✔️ Relatórios Customizados</p>
                         </div>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
         </section>
 
         <section class="sec5 white-section" id="form_01">
-            <div>
+            <div class="lay_form">
                 <div class="layout_title">
                     <span>AGILIZE O SEU TEMPO</span>
                 </div>
@@ -332,14 +332,15 @@
 
                         <input type="button" value="Enviar" />
                     </form>
+                    <div>
+                        <p>Auxiliando o crescimento e fortalecimento da sua empresa!</p>
+                        <a href="./" class="logo">
+                            <img src="./imgs/logo-phone-azul.png"
+                                srcset="./imgs/logo-desktop-azul.png 1000w, ./imgs/logo-phone-azul.png 700w"
+                                sizes="(max-width: 900px) 700px, 1000px" alt="Descrição da imagem">
 
-                    <p>Auxiliando o crescimento e fortalecimento da sua empresa!</p>
-                    <a href="./" class="logo">
-                        <img src="./imgs/logo-phone-azul.png"
-                            srcset="./imgs/logo-desktop-azul.png 1000w, ./imgs/logo-phone-azul.png 700w"
-                            sizes="(max-width: 900px) 700px, 1000px" alt="Descrição da imagem">
-
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -423,12 +424,12 @@
                 if (sectionTop < window.innerHeight / 1 && sectionBottom > window.innerHeight / 1) {
                     // Altera a cor do ícone baseado na cor da seção
                     if (section.classList.contains('blue-section')) {
-                        //icon.style.color = 'white';
+
                         gsap.to(".fa-circle-chevron-left", {
                             color: 'white',
                         })
                     } else if (section.classList.contains('white-section')) {
-                        //icon.style.color = '#01044e';
+
                         gsap.to(".fa-circle-chevron-left", {
                             color: '#01044e',
                         })
@@ -437,6 +438,7 @@
             });
         }
         window.addEventListener('scroll', checkSection);
+
     </script>
 
 

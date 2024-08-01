@@ -1,4 +1,14 @@
-@media (min-width: 768px) {
+@media (min-width: 360px) {
+    .item_description p, .plano_coluna p {
+        font-size: 12px;
+    }
+
+    .item_description p:nth-child(1), .plano_coluna p:nth-child(1) {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 712px) {
     .frame {
         background-size: 86%;
         background-position: center;
@@ -67,14 +77,8 @@
 
 
     /*PLANOS*/
-    .layout_planos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .tabela {
-        border-width: 2px;
+        border-width: 1px;
         justify-content: center;
         width: max-content;
 
@@ -90,7 +94,7 @@
         font-size: 18px;
         padding: 0px 5px;
         height: 43px;
-        border-width: 2px;
+        border-width: 1px;
     }
 
     .plano_coluna p:nth-child(15) {
@@ -115,7 +119,7 @@
 
 
     /*Formulario*/
-    .formulario>p {
+    .formulario>div>p, .formulario>p {
         font-size: 20px;
     }
     .form01 p {
@@ -128,4 +132,137 @@
     .form01 input, .form01 select, .form01 select option {
         font-size: 25px;
     }
+
+    .formulario>div {
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .layout_01 {
+        margin: 23px 50px 0px 50px;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .layout_02{
+        width:50%;
+    }
+    .layout_03 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header a.logo {
+        position: absolute;
+        margin: 10px 0px 0px 0px;
+        width: 100%;
+    }
+    header .logo img {
+        width: 25%;
+        left: 16vw;
+        position: relative;
+        top: 8vw;
+    }
+    .frame {
+        background-size: contain;
+        background-position: bottom;
+        width: 46vw;
+        height: 46vw;
+    }
+    h1 {
+        font-size: 21px;
+        margin: 10px 0px;
+    }
+    h2 {
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+
+    .bene>span {
+        font-size: 20px;
+    }
+
+    .bene>p {
+        font-size: 16px;
+    }
+    .servs>span {
+        font-size: 20px;
+    }
+    .serv_description>p {
+        font-size: 16px;
+    }
+    .item_description p:nth-child(1), .plano_coluna p:nth-child(1) {
+        font-size: 14px;
+    }
+    .item_description p, .plano_coluna p {
+        font-size: 12px;
+        padding: 0px 5px;
+        height: 28px;
+    }
+    .plano_coluna p:nth-child(15) {
+        font-size: 12px;
+    }
+    .obj>span {
+        font-size: 20px;
+    }
+    .obj>p {
+        font-size: 13px;
+        padding: 0px 55px;
+    }
+    .remoje i {
+        font-size: 21px;
+        margin: 10px 2px;
+    }
+    .obj {
+        width: 68%;
+    }
+
+    .formulario>div>p {
+        font-size: 26px;
+        margin-left: 0px;
+        font-weight: normal;
+    }
+
+    .formulario>div {
+        align-items: center;
+        flex-direction: column;
+        bottom: 18vw;
+        position: relative;
+        width: 52%;
+    }
+
+    .formulario>p{
+        width: 30%;
+        font-size: 20px;
+    }
+
+    .formulario>p {
+        width: 53%;
+        font-size: 28px;
+        text-align: start;
+    }
+    
+    .form01 input, .form01 select, .form01 select option {
+        font-size: 15px;
+    }
+    .form01 {
+        width: 40%;
+    }
+    section img {
+        width: 190px;
+    }
+
+    .formulario {
+    align-items: flex-start;
+        flex-direction: row;
+        padding: 0px 25px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 43vw;
+        width: 80%;
+    }
+
 }

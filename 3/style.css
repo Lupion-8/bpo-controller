@@ -32,6 +32,24 @@ html {
     }
 }
 
+/* Estiliza a parte geral da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* largura */
+  }
+  
+  /* Estiliza o 'polegar' da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    transition: 1s;
+    background-color: var(--base1); /* cor do polegar */
+    border-radius: 6px; /* arredondamento dos cantos */
+  }
+  
+  /* Estiliza o 'trilho' da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* cor do trilho */
+    border-radius: 6px; /* arredondamento dos cantos */
+  }
+
 .fa-chart-line,
 .fa-id-card-clip,
 .fa-microchip,
@@ -181,6 +199,7 @@ h2 {
     border-color: var(--base4);
     padding: 20px 0px;
     width: 85%;
+    justify-content: space-evenly;
 }
 
 
@@ -208,6 +227,13 @@ h2 {
 .sec3 .layout_title span {
     color: var(--base5);
     text-align: center;
+    padding: 0px 20px;
+}
+
+.layout_planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tabela {
@@ -217,6 +243,7 @@ h2 {
     border-right-style: solid;
     border-width: 1px;
     border-color: var(--base3);
+    
 }
 
 .plano_coluna {
@@ -236,8 +263,8 @@ h2 {
 
 .item_description p,
 .plano_coluna p {
-    font-size: 15px;
-    padding: 8px 5px;
+    font-size: 9px;
+    padding: 0px 5px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -253,7 +280,7 @@ h2 {
     font-weight: bold;
     background-color: var(--base3);
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 9px;
 }
 
 
@@ -264,6 +291,7 @@ h2 {
 
 .item_description p {
     text-align: start;
+    justify-content: start;
 }
 
 .tabes {
@@ -306,6 +334,12 @@ h2 {
     font-size: 15px;
 }
 
+.lay_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .remoje i {
     font-size: 20px;
     margin: 10px 5px;
@@ -320,10 +354,24 @@ h2 {
     padding: 0px 25px;
 }
 
-.formulario>p {
+.formulario>div>p, .formulario>p {
     font-size: 18px;
     text-align: center;
 }
+
+.formulario>div>p {
+    text-align: start;
+    margin-left: 13px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.formulario>div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+} 
 
 .form01 {
     display: flex;
@@ -363,11 +411,16 @@ h2 {
     padding: 10px 0px;
 }
 
+section img {
+    width: 137px;
+}
+
 .fa-circle-chevron-left {
     position: fixed;
     font-size: 45px;
     color: var(--base1);
-    right: 10px;
-    bottom: 0px;
+    right: 5%;
+    bottom: 0%;
     transform: translate(0px, 100px) rotate(90deg);
 }
+
