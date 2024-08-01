@@ -161,7 +161,6 @@ h2 {
 .sec2 .layout_title span {
     color: var(--textsWhite);
     text-align: center;
-
 }
 
 .servs {
@@ -189,3 +188,50 @@ h2 {
     padding: 5px 30px;
     text-align: center;
 }
+
+
+
+/*planos e  tabela*/
+
+.sec3 {
+    padding: 30px 0px;
+}
+
+.sec3 .layout_title span {
+    color: var(--base5);
+    text-align: center;
+}
+
+.tabela{
+    display: flex;
+    background-color: aqua;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: var(--base4);
+    padding: 5px;
+    justify-content: space-between;
+}
+
+
+.item_description p, .plano_coluna p {
+    font-size: 15px;
+    padding: 8px 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--base3);
+}
+
+.item_description p{
+    text-align: start;
+}
+
+.tabes {
+    display: flex;
+}
+
