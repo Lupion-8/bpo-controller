@@ -28,6 +28,14 @@
     }
 }
 
+.fa-chart-line, .fa-id-card-clip, .fa-microchip, .fa-maximize, .fa-magnifying-glass-chart, .fa-chart-pie, .fa-shield-halved{
+    font-size: 23px;
+    color: var(--base3);
+}
+
+a.logo {
+    margin: 10px 0px 0px 0px;
+}
 
 header {
     background: linear-gradient(356deg, var(--base1), var(--base5));
@@ -42,7 +50,12 @@ header {
     background-size: 100%;
     background-repeat: no-repeat;
     height: 85vw;
-    margin: 1vw 5vw 0vw 5vw;
+}
+
+.layout_01 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 20px;
 }
 
 .layout_02 {
@@ -52,19 +65,17 @@ header {
     color: white;
 }
 
-h1{
-    font-size: 10px;
+h1 {
+    font-size: 19px;
+    margin: 10px 0px;
+    text-transform: uppercase;
 }
 
-h2{
-    font-size: 5px
+h2 {
+    font-size: 15px;
+    margin: 10px;
 }
-.frame {
-    background-image: url(https://controllerconsultores.com.br/assets/imgs/frame-1.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vw;
-}
+
 .btn {
     width: 100%;
     display: flex;
@@ -77,11 +88,57 @@ h2{
     background-color: var(--base4);
     outline: none;
     border: none;
-    border-radius: 0.3vw;
-    padding: 0.8vw;
+    border-radius: 7px;
+    padding: 10px;
     animation: pulseButton 2s infinite;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 15px;
+    margin: 10px 0px 30px 0px;
 }
+
+
+.layout_title{
+    display: flex;
+    justify-content: center;
+    margin: 30px; 
+}
+
+.layout_title>  span{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:  var(--base3);
+}
+
+.layout_beneficios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bene{
+    border-style: solid;
+    border-width: 1px;
+    width: 80%;
+    border-radius: 10px;
+    border-color: var(--base3);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.bene > span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bene > p{
+    font-size: 15px;
+}
+
 
