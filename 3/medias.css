@@ -1,0 +1,131 @@
+@media (min-width: 768px) {
+    .frame {
+        background-size: 86%;
+        background-position: center;
+        height: 84vw;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 10px 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 10px 30px;
+    }
+
+    .btn_white {
+        font-size: 20px;
+    }
+
+    .layout_title>span {
+        font-size: 35px;
+    }
+
+    /*BENEFICIOS*/
+    section.sec1.white-section {
+        overflow: hidden;
+    }
+
+    .layout_beneficios,
+    .layout_servis {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: normal;
+    }
+
+    .bene {
+        width: 290px;
+        margin: 10px 10px;
+    }
+
+    .bene>span {
+        font-size: 25px;
+    }
+
+    .bene>p {
+        font-size: 20px;
+    }
+
+    /*ATIVIDADES*/
+    .servs {
+        margin: 10px 10px;
+        width: 290px;
+    }
+
+    .servs>span {
+        font-size: 23px;
+        padding: 10px 10px;
+    }
+
+    .serv_description>p {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+
+    /*PLANOS*/
+    .layout_planos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabela {
+        border-width: 2px;
+        justify-content: center;
+        width: max-content;
+
+    }
+
+    .item_description p:nth-child(1),
+    .plano_coluna p:nth-child(1) {
+        font-size: 21px;
+    }
+
+    .item_description p,
+    .plano_coluna p {
+        font-size: 18px;
+        padding: 0px 5px;
+        height: 43px;
+        border-width: 2px;
+    }
+
+    .plano_coluna p:nth-child(15) {
+        font-size: 18px;
+    }
+
+
+    /*duvidas*/
+    .obj>span {
+        font-size: 25px;
+    }
+
+    .obj>p {
+        font-size: 19px;
+    }
+
+    .remoje i {
+        font-size: 29px;
+        margin: 10px 6px;
+    }
+
+
+
+    /*Formulario*/
+    .formulario>p {
+        font-size: 20px;
+    }
+    .form01 p {
+        font-size: 20px;
+    }
+    .form01 {
+        width: 70%;
+    }
+
+    .form01 input, .form01 select, .form01 select option {
+        font-size: 25px;
+    }
+}

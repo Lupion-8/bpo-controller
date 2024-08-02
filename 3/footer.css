@@ -55,85 +55,27 @@ footer {
     font-size: 3vw;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 768px) {
     ._cont-info {
-        font-size: 5vw;
+        font-size: 30px;
     }
-
-    ._cont-endere,
-    ._cont-email,
-    ._cont-tele,
-    ._cont-hora {
-        font-size: 3vw;
-    }
-
-    ._cont-icon-size {
-        font-size: 4vw;
-    }
-
-    .dev {
-        border-top: 1px solid rgba(255, 255, 255, .3);
-        font-size: 2vw;
-    }
-}
-
-@media (min-width: 1024px) {
-    ._cont-info {
-        font-size: 4vw;
-    }
-
     ._cont-cidade {
-        font-size: 3vw;
-    }
-
-    ._cont-endere,
-    ._cont-email,
-    ._cont-tele,
-    ._cont-hora {
-        font-size: 2vw;
-    }
-
-    ._cont-icon-size {
-        font-size: 3vw;
-    }
-
-    .iconRedes {
-        font-size: 5vw;
-    }
-
-    .dev {
-        border-top: 1px solid rgba(255, 255, 255, .3);
-        font-size: 1.8vw;
-    }
-}
-
-@media (min-width: 1366px) {
-
-    footer {
-        padding: 5vw 0vw 0vw;
-    }
-    ._cont {
-        margin: 5vw 5vw 1vw;
-    }
-
-    ._cont-info {
-        font-size: 2vw;
-    }
-
-    ._cont-cidade {
-        font-size: 1.5vw;
+        font-size: 20px;
     }
     ._cont-endere, ._cont-email, ._cont-tele, ._cont-hora {
-        font-size: 1vw;
-        margin: 0.3vw;
+        font-size: 15px;
+        margin: 5px 0px;
     }
     ._cont-icon-size {
-        font-size: 1vw;
+        font-size: 22px;
     }
     .iconRedes {
-        font-size: 2vw;
+        font-size: 40px;
+        margin: 20px;
     }
     .dev {
-        font-size: 1vw;
+        border-top: 1px solid rgba(255, 255, 255, .3);
+        font-size: 14px;
+        margin: 2px 20px;
     }
 }
