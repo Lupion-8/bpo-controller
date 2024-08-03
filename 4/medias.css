@@ -330,4 +330,35 @@
     .layout_beneficios, .layout_servis {
         padding: 0vw 10vw;
     }
+
+    .formulario>div {
+        align-items: center;
+        flex-direction: column;
+        bottom: 10vw;
+        position: relative;
+        width: 52%;
+    }
+    .item_description p {
+        text-align: start;
+        justify-content: center;
+    }
+   
+}
+
+@media (min-width: 1920px) {
+    header .logo img {
+        width: 15vw;
+    }
+    h1 {
+        font-size: 3vw;
+    }
+
+    header a.logo {
+        position: absolute;
+        margin: 3vw 0px 0px 0vw;
+    }
+
+    section img {
+        width: 300px;
+    }
 }

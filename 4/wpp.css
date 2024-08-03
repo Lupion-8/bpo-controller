@@ -32,4 +32,12 @@
         width: 5vw;
         height: 5vw;
     }
+  
+}
+
+@media (min-width: 1920px) {
+    .wapp {
+        width: 4vw;
+        height: 4vw;
+    }
 }
