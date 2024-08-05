@@ -331,4 +331,8 @@
     .btn_white {
         font-size: 1.3vw;
     }  
+
+    .layout_beneficios, .layout_servis {
+        padding: 0vw 10vw;
+    }
 }
