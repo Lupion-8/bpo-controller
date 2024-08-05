@@ -266,3 +266,69 @@
     }
 
 }
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .item_description p:nth-child(1), .plano_coluna p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .item_description p, .plano_coluna p {
+        font-size: 17px;
+    }
+
+    .obj>span {
+        font-size: 23px;
+    }
+    .remoje i {
+        font-size: 25px;
+    }
+    .obj>p {
+        font-size: 18px;
+    }
+    .formulario>p {
+        font-size: 25px;
+    }
+    .formulario>div>p {
+        font-size: 25px;
+    }
+    .form01 p {
+        font-size: 22px;
+    }
+    .form01 input, .form01 select, .form01 select option {
+        font-size: 19px;
+    }
+    .formulario {
+        height: 26vw;
+    }
+}
+
+@media (min-width: 1366px) {
+    .layout_02 {
+        top: -57px;
+        position: relative;
+    }
+
+    header .logo img {
+        width: 20vw;
+        left: 16vw;
+        top: 10vw;
+    }
+    h1 {
+        font-size: 2vw;
+    }
+    h2 {
+        font-size: 1.5vw;
+    }
+    .fa-circle-chevron-left {
+      right: 1%;
+    }  
+    .btn_white {
+        font-size: 1.3vw;
+    }  
+}
