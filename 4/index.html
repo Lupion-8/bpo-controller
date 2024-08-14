@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="btn">
-                    <a class="page-scroll" href="#form_01">
+                    <a class="page-scroll" href="">
                         <button class="btn_white">Fale com um especialista</button>
                     </a>
                 </div>
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="btn">
-                <a class="page-scroll" href="#form_01">
+                <a class="page-scroll" href="">
                     <button class="btn_white">Fale com um especialista</button>
                 </a>
             </div>
@@ -222,7 +222,7 @@
                 </div>
             </div>
             <div class="btn">
-                <a class="page-scroll" href="#form_01">
+                <a class="page-scroll" href="">
                     <button class="btn_white">Fale com um especialista</button>
                 </a>
             </div>
@@ -326,7 +326,7 @@
                 </div>
             </div>
             <div class="btn">
-                <a class="page-scroll" href="#form_01">
+                <a class="page-scroll" href="">
                     <button class="btn_white">Fale com um especialista</button>
                 </a>
             </div>
@@ -388,7 +388,8 @@
                 </div>
 
                 <div class="formulario">
-                    <p>Garanta mais tempo para crescer, deixando suas finanças em nossas mãos, auxiliando no crescimento e fortalecimento da sua empresa!</p>
+                    <p>Garanta mais tempo para crescer, deixando suas finanças em nossas mãos, auxiliando no crescimento
+                        e fortalecimento da sua empresa!</p>
                     <form class="form01" method="POST">
                         <p>Entre em contato conosco hoje e descubra como podemos ajudar sua empresa a prosperar!</p>
                         <input type="text" placeholder="Seu nome" />
@@ -397,7 +398,7 @@
                         <input type="button" value="Enviar" />
                     </form>
                     <div>
-    
+
                         <a href="./" class="logo">
                             <img src="./imgs/logo-phone-azul.png"
                                 srcset="./imgs/logo-desktop-azul.png 1000w, ./imgs/logo-phone-azul.png 700w"
@@ -507,6 +508,15 @@
         document.querySelector('.wapp').addEventListener('click', () => {
             window.open(`https://api.whatsapp.com/send/?phone=5587981025310&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+cont%C3%A1bil.+&type=phone_number&app_absent=0`);
         });
+
+        const btn = document.querySelectorAll('.btn_white');
+        btn.forEach(element => {
+            element.addEventListener('click', () => {
+                window.open(`https://api.whatsapp.com/send/?phone=5587981025310&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+cont%C3%A1bil.+&type=phone_number&app_absent=0`);
+            });
+        });
+
+
         setTimeout(() => {
             gsap.to(".wapp", {
                 x: 0,

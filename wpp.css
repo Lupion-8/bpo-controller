@@ -1,7 +1,7 @@
 .wapp {
     position: fixed;
-    right: 1vw;
-    bottom: 3.843vw;
+    right: 0.5vw;
+    bottom: 5.843vw;
     width: 15vw;
     height: 15vw;
     background-image: url(https://controllerconsultores.com.br/assets/imgs/wpp.png);
@@ -15,6 +15,7 @@
     display: inline;
     z-index: 1000;
     cursor: pointer;
+    transform: translateX(100px);
 }
 
 
