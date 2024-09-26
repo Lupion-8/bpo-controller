@@ -14,6 +14,7 @@ html {
     --base3: #ed8534;
     --base4: #ffffff;
     --base5: #000000;
+    --base6: #ff933f;
     --textsWhite: #ffffff;
     --colorNone: #5c5c5c;
 }
@@ -73,8 +74,19 @@ header {
     align-items: center;
 }
 
+div#particles-1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+header .logo img {
+    width: 33vw;
+}
+
 .frame {
-    background-image: url(https://controllerconsultores.com.br/assets/imgs/frame-1.png);
+    background-image: url(./imgs/frame-1.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 85vw;
@@ -82,8 +94,9 @@ header {
 
 .layout_01 {
     display: flex;
-    flex-direction: column-reverse;
-    padding: 0px 20px;
+    flex-direction: column;
+    padding: 0px 15px;
+    z-index: 2;
 }
 
 .layout_02 {
@@ -98,6 +111,10 @@ h1 {
     font-size: 19px;
     margin: 10px 0px;
     text-transform: uppercase;
+}
+
+h1 span {
+    font-size: 19px;
 }
 
 h2 {
@@ -391,6 +408,7 @@ h2 {
     border-width: 1px;
     border-color: var(--base3);
     margin: 10px 0px;
+    color: white;
 }
 
 .form01 p {
@@ -406,6 +424,7 @@ h2 {
     margin: 10px 0px;
     padding: 5px;
     outline: none;
+    border-radius: 7px
 }
 
 .form01 select option {
@@ -418,6 +437,12 @@ h2 {
     border-style: none;
     border-radius: 5px;
     padding: 10px 0px;
+    cursor: pointer;
+}
+
+.form01 input[type="button"]:hover{
+    background-color:#e77824;
+    transition: 200ms;
 }
 
 section img {
@@ -433,3 +458,10 @@ section img {
     transform: translate(0px, 100px) rotate(90deg);
 }
 
+
+
+
+#animated-text span {
+
+    transition: color 0.3s ease-in-out;
+  }

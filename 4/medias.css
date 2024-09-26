@@ -1,18 +1,28 @@
 @media (min-width: 360px) {
 
-    .plano_coluna p i{
-        font-size: 15px ;
+    .plano_coluna p i {
+        font-size: 15px;
     }
-    .item_description p, .plano_coluna p {
+
+    .item_description p,
+    .plano_coluna p {
         font-size: 12px;
     }
 
-    .item_description p:nth-child(1), .plano_coluna p:nth-child(1) {
+    .item_description p:nth-child(1),
+    .plano_coluna p:nth-child(1) {
         font-size: 12px;
     }
 }
 
 @media (min-width: 712px) {
+
+    .layout_03 {
+        display: flex;
+        justify-content: center;
+    }
+
+
     .frame {
         background-size: 86%;
         background-position: center;
@@ -22,6 +32,9 @@
     h1 {
         font-size: 30px;
         margin: 10px 30px;
+    }
+    h1 span{
+        font-size: 30px;
     }
 
     h2 {
@@ -123,17 +136,22 @@
 
 
     /*Formulario*/
-    .formulario>div>p, .formulario>p {
+    .formulario>div>p,
+    .formulario>p {
         font-size: 20px;
     }
+
     .form01 p {
         font-size: 20px;
     }
+
     .form01 {
         width: 70%;
     }
 
-    .form01 input, .form01 select, .form01 select option {
+    .form01 input,
+    .form01 select,
+    .form01 select option {
         font-size: 25px;
     }
 
@@ -141,28 +159,43 @@
         align-items: center;
         flex-direction: column;
     }
-
+    .fa-circle-chevron-left {
+        right: 27px;
+    }
 }
+
+@media (min-width: 820px) {
+    .fa-circle-chevron-left {
+        right: 22px;
+    }
+}
+
 
 @media (min-width: 1024px) {
     .layout_01 {
-        margin: 23px 50px 0px 50px;
+        margin: 0px 50px 0px 50px;
         flex-direction: row;
         align-items: flex-end;
     }
-    .layout_02{
-        width:50%;
+
+    .layout_02 {
+        width: 50%;
     }
+
     .layout_03 {
         width: 50%;
         display: flex;
+        height: 78vh;
         align-items: center;
         justify-content: center;
     }
+
     header a.logo {
         position: absolute;
-        margin: 3vw 0px 0px 8vw;
-        width: 90vw;
+        display: flex;
+        width: 73vw;
+        justify-content: flex-end;
+        padding: 3vw 10vw 0vw 0vw;
     }
 
     header .logo img {
@@ -170,18 +203,28 @@
     }
 
     .frame {
-        background-size: contain;
-        background-position: bottom;
-        width: 46vw;
-        height: 46vw;
+        background-size: 48vw;
+        background-position: top;
+        width: 44vw;
+        height: 45vw;
     }
+
     h1 {
-        font-size: 21px;
-        margin: 18px 0px 9px 0px;
+        font-size: 22px;
+        margin: 0px 0px 0px 0px;
+        top: 37vw;
+        position: relative;
     }
+
+    h1 span{
+        font-size: 22px;
+    }
+
     h2 {
-        font-size: 14px;
-        margin: 34px 0px 41px 0px;
+        font-size: 18px;
+        margin: 0px 0px 0px 0px;
+        position: relative;
+        top: 40vw;
     }
 
     .bene>span {
@@ -191,34 +234,45 @@
     .bene>p {
         font-size: 16px;
     }
+
     .servs>span {
         font-size: 20px;
     }
+
     .ser_decri>p {
         font-size: 16px;
     }
-    .item_description p:nth-child(1), .plano_coluna p:nth-child(1) {
+
+    .item_description p:nth-child(1),
+    .plano_coluna p:nth-child(1) {
         font-size: 14px;
     }
-    .item_description p, .plano_coluna p {
-        font-size: 12px;
-        padding: 0px 5px;
-        height: 28px;
+
+    .item_description p,
+    .plano_coluna p {
+        font-size: 20px;
+        padding: 2px 5px;
+        height: 29px;
     }
+
     .plano_coluna p:nth-child(15) {
         font-size: 12px;
     }
+
     .obj>span {
         font-size: 20px;
     }
+
     .obj>p {
         font-size: 13px;
         padding: 0px 55px;
     }
+
     .remoje i {
         font-size: 21px;
         margin: 10px 2px;
     }
+
     .obj {
         width: 68%;
     }
@@ -226,130 +280,251 @@
     .formulario>div {
         align-items: center;
         flex-direction: column;
-        bottom: 18vw;
+        bottom: 0vw;
         position: relative;
         width: 52%;
     }
 
-    .formulario>p{
+    .formulario>p {
         width: 30%;
         font-size: 20px;
     }
 
     .formulario>p {
-        width: 53%;
+        width: 100%;
         font-size: 28px;
         text-align: start;
+        text-align: center;
     }
-    
-    .form01 input, .form01 select, .form01 select option {
+
+    .form01 input,
+    .form01 select,
+    .form01 select option {
         font-size: 15px;
     }
+
     .form01 {
-        width: 40%;
+        width: 74%;
+        height: 53vh;
+        display: flex;
+        justify-content: center;
     }
+
     section img {
         width: 190px;
     }
 
     .formulario {
-    align-items: flex-start;
+        align-items: flex-start;
         flex-direction: row;
         padding: 0px 25px;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         height: 28vw;
         width: 80%;
     }
 
+
+    .fa-circle-chevron-left {
+        right: 16px;
+        font-size: 37px;
+    }
+
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+    .layout_03 {
+        height: 35vh;
+    }
+
+    .form01 {
+        height: 25vh;
+    }
+    
+    .fa-circle-chevron-left {
+        right: 16px;
+        font-size: 66px;
+    }
 }
 
 @media (min-width: 1280px) {
     h1 {
         font-size: 30px;
     }
+
+    h1 span{
+        font-size: 30px;
+    }
+
     h2 {
         font-size: 20px;
     }
-    .item_description p:nth-child(1), .plano_coluna p:nth-child(1) {
+
+    .item_description p:nth-child(1),
+    .plano_coluna p:nth-child(1) {
         font-size: 20px;
     }
 
-    .item_description p, .plano_coluna p {
+    .item_description p,
+    .plano_coluna p {
         font-size: 17px;
     }
 
     .obj>span {
         font-size: 23px;
     }
+
     .remoje i {
         font-size: 25px;
     }
+
     .obj>p {
         font-size: 18px;
     }
+
     .formulario>p {
         font-size: 25px;
     }
-  
+
     .form01 p {
         font-size: 22px;
     }
-    .form01 input, .form01 select, .form01 select option {
+
+    .form01 input,
+    .form01 select,
+    .form01 select option {
         font-size: 19px;
     }
+
     .formulario {
-        height: 26vw;
+        height: 16vw;
     }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1358px) {
+
+    header{
+        height: 100vh;
+    }
+
     .layout_02 {
         top: -57px;
         position: relative;
     }
 
+    .layout_03 {
+        height: 100vh;
+    }
+
+    .frame {
+        background-size: 44vw;
+    }
+
+    section.sec1.white-section {
+        padding: 0px 50px;
+    }
+
+    h1 {
+        font-size: 27px;
+        top: 33vw;
+    }
+
+    h1 span{
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+        top: 36vw;
+    }
+
+}
+
+@media (min-width: 1366px) {
+
+    header{
+        height: 100vh;
+    }
+
+    .layout_02 {
+        top: -57px;
+        position: relative;
+    }
+
+    .layout_03 {
+        height: 100vh;
+    }
+
+    header a.logo {
+        width: 65vw;
+    }
+
+    .frame {
+        width: 46vw;
+        height: 41vw;
+        background-size: 46vw;
+    }
+
+
     header .logo img {
-        width: 20vw;
+        width: 13vw;
         left: 16vw;
         top: 10vw;
     }
+
     h1 {
-        font-size: 2vw;
+        font-size: 27px;
+        top: 32vw;
     }
+
+    h1 span{
+        font-size: 27px;
+    }
+
     h2 {
         font-size: 1.5vw;
+        top: 36vw;
     }
+
     .fa-circle-chevron-left {
-      right: 1%;
-    }  
+        right: 1%;
+    }
+
     .btn_white {
         font-size: 1.3vw;
-    }  
+    }
 
-    .layout_beneficios, .layout_servis {
+    .layout_beneficios,
+    .layout_servis {
         padding: 0vw 10vw;
     }
 
     .formulario>div {
         align-items: center;
         flex-direction: column;
-        bottom: 10vw;
+        bottom: 0vw;
         position: relative;
         width: 52%;
     }
+
     .item_description p {
         text-align: start;
         justify-content: center;
     }
-   
+
 }
+
+
 
 @media (min-width: 1920px) {
     header .logo img {
         width: 15vw;
     }
+
     h1 {
+        font-size: 3vw;
+    }
+    h1 span{
         font-size: 3vw;
     }
 
