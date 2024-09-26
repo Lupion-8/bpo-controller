@@ -80,6 +80,16 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+.sos {
+    margin-bottom: 80px;
+}
+
+.info_redir{
+ font-size: 1.2rem;
+ font-weight: bold;
+}
+
 footer {
     text-align: center;
     padding: 5px;
