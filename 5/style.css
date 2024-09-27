@@ -1,0 +1,563 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
+}
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+
+
+/* Estiliza a parte geral da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    /* largura */
+}
+
+/* Estiliza o 'polegar' da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    transition: 1s;
+    background-color: var(--base1);
+    /* cor do polegar */
+    border-radius: 1px;
+    /* arredondamento dos cantos */
+}
+
+/* Estiliza o 'trilho' da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: var(--base4);
+    /* cor do trilho */
+    border-radius: 6px;
+    /* arredondamento dos cantos */
+}
+
+
+
+header {
+    background: linear-gradient(356deg, var(--base1), var(--base5));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.particles {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+canvas.particles-js-canvas-el {
+    position: absolute;
+    z-index: 0;
+}
+
+header .centro {
+    z-index: 1;
+    display: flex;
+    margin: 5vw auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    height: 77vh;
+    justify-content: space-between;
+}
+
+header .direito {
+    padding: 1vw 0vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 25vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+header img.frame1 {
+    width: 100vw;
+    z-index: 0;
+}
+
+header .logo {
+    width: 45vw;
+}
+
+header .esquerdo {
+    color: var(--textsWhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw 5vw;
+    text-align: center;
+    height: 100vh;
+}
+
+header h1,
+h2,
+h3 {
+    padding: 1vw;
+    z-index: 1;
+}
+
+#animated-text span {
+    transition: color 0.3s ease-in-out;
+}
+
+header h1,
+h1 span {
+    font-size: 25px;
+}
+
+header h2,
+h3 {
+    position: relative;
+    font-size: 13px;
+    top: 33vh;
+    padding: 3vw 0vw;
+}
+
+header .lay_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+header .btn_white {
+    transition: 500ms;
+    background-color: var(--base4);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 30px 0px;
+}
+
+header .bons{
+
+}
+
+
+
+.lay_form {
+    display: none;
+    position: absolute;
+    height: 60vh;
+    width: 30%;
+    z-index: 2;
+    right: 5vw;
+    bottom: 10vh;
+    background: linear-gradient(312deg, #01052d, #2a2b51);
+    box-shadow: 4px 4px 7px 0px rgba(255, 255, 255, 0.192);
+    color: var(--textsWhite);
+    border-radius: 1.3vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    padding: 1vw;
+    text-align: center;
+    justify-content: center;
+}
+
+form p {
+    margin-bottom: 4vw;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+form input {
+    padding: 0.5vw;
+    background-color: transparent;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--base4);
+    outline: none;
+    color: var(--textsWhite);
+}
+
+form input[type="button"] {
+    background-color: var(--base6);
+    color: var(--textsWhite);
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 4vh;
+    color: var(--base1);
+    font-weight: 600;
+}
+
+form input[type="button"]:hover {
+    background-color: #969594;
+    transition: 200ms;
+}
+
+/* Se a altura for menor ou igual a 480 pixel */
+@media (max-height: 568px) {
+    header .logo {
+        width: 32vw;
+    }
+
+    header h1,
+    h1 span {
+        font-size: 20px;
+    }
+
+    header .btn_white {
+
+        border-radius: 4px;
+        padding: 8px;
+        margin: 17px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 344px) and (min-height: 882px) {
+    header .logo {
+        width: 50vw;
+        margin: 5vw 0vw;
+    }
+
+    header img.frame1 {
+        width: 150vw;
+        z-index: 0;
+    }
+
+    header h2,
+    h3 {
+        position: relative;
+        font-size: 19px;
+        top: 33vh;
+        padding: 3vw 0vw;
+    }
+
+    header .btn_white {
+        margin: 54px 0px 10px 0px;
+    }
+}
+
+
+/* Se a largura for maior ou igual a 360 pixel */
+@media (min-width: 360px) {
+    header .logo {
+        width: 39vw;
+    }
+
+    header h2,
+    h3 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 390px) {
+    header .logo {
+        width: 48vw;
+        margin: 0vw 0vw;
+    }
+
+    header h1,
+    h1 span {
+        font-size: 32px;
+    }
+
+    header h2,
+    h3 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+    header .btn_white {
+
+        border-radius: 5px;
+        font-size: 21px;
+        margin: 47px 0px 30px 0px;
+    }
+
+    header img.frame1 {
+        width: 130vw;
+    }
+}
+
+/* Se a largura for maior ou igual a 540px pixel */
+@media (min-width: 414px) {
+    header .logo {
+        width: 35vw;
+    }
+}
+
+
+/* Se a largura for maior ou igual a 540px pixel */
+@media (min-width: 540px) {
+    header .logo {
+        width: 27vw;
+    }
+
+    header h1,
+    h1 span {
+        font-size: 35px;
+    }
+
+    header img.frame1 {
+        width: 92vw;
+    }
+
+    header .btn_white {
+        font-size: 18px;
+        margin: 33px 0px 30px 0px;
+    }
+
+    header .direito {
+        top: 28vh;
+    }
+}
+
+/* Se a largura for maior ou igual a 768px pixel */
+@media (min-width: 768px) {
+    header .logo {
+        width: 27vw;
+    }
+
+    header h1,
+    h1 span {
+        font-size: 48px;
+    }
+
+    header img.frame1 {
+        width: 90vw;
+    }
+
+    header .direito {
+        top: 28vh;
+    }
+
+    header h2,
+    h3 {
+        font-size: 25px;
+        padding: 2vw 0vw;
+    }
+
+    header .btn_white {
+        border-radius: 7px;
+        font-size: 28px;
+    }
+}
+
+/* Se a largura for maior ou igual a 820px pixel */
+@media (min-width: 820px) {
+
+    header h1,
+    h1 span {
+        font-size: 51px;
+    }
+}
+
+@media (min-width: 912px) {
+
+    header img.frame1 {
+        width: 91vw;
+    }
+
+    header h1,
+    h1 span {
+        font-size: 60px;
+    }
+
+    header h2,
+    h3 {
+        font-size: 32px;
+        padding: 2vw 0vw;
+    }
+
+    header .btn_white {
+        border-radius: 7px;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {}
+
+@media (min-width: 1024px) and (max-height: 800px) {
+
+    header .centro {
+        align-items: flex-start;
+        height: 60vh;
+    }
+
+    header .esquerdo {
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+        top: 25vw;
+        height: 40vh;
+        z-index: 1;
+    }
+
+    header .direito {
+        top: 0vh;
+        align-items: flex-start;
+        height: 95vh;
+    }
+
+    header h1,
+    h1 span {
+        font-size: 36px;
+    }
+
+    header h1,
+    h2,
+    h3 {
+        padding: 0vw;
+    }
+
+    header a {
+        position: absolute;
+        bottom: 69vh;
+        left: 72vw;
+    }
+
+    header .logo {
+        width: 16vw;
+        z-index: 1;
+    }
+
+    header h2,
+    h3 {
+        font-size: 17px;
+        padding: 0vw 0vw;
+        top: 0vh;
+    }
+
+    header img.frame1 {
+        width: 62vw;
+    }
+
+    header .btn_white {
+        font-size: 16px;
+        display: none;
+    }
+
+    .lay_form {
+        position: absolute;
+        display: flex;
+    }
+}
+
+
+
+@media (min-width: 1280px) {
+
+    header h1,
+    h1 span {
+        font-size: 49px;
+    }
+
+    header h2,
+    h3 {
+        font-size: 22px;
+    }
+
+    form input {
+        font-size: 1.7vw;
+    }
+
+    form p {
+
+        font-size: 2vw;
+    }
+
+    .lay_form {
+        box-shadow: 7px 7px 7px 0px rgba(255, 255, 255, 0.192);
+    }
+}
+
+
+@media (min-width: 1358px) {
+    header .logo {
+        width: 13vw;
+    }
+
+    header img.frame1 {
+        width: 50vw;
+        position: relative;
+        left: 5vw;
+    }
+
+    header .esquerdo {
+
+        top: 20vw;
+    }
+
+    header a {
+        bottom: 75vh;
+        left: 73vw;
+    }
+
+    header h2, h3 {
+        font-size: 20px;
+    }
+
+    form p {
+        font-size: 1.1vw;
+    }
+
+    form input {
+        font-size: 1.2vw;
+    }
+
+    header .lay_form {
+        height: 59vh;
+        width: 26%;
+        right: 7vw;
+        justify-content: center;
+    }
+}
