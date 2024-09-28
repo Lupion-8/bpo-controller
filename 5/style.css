@@ -71,13 +71,13 @@ header {
     align-items: center;
 }
 
-.particles {
+header .particles {
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-canvas.particles-js-canvas-el {
+header canvas.particles-js-canvas-el {
     position: absolute;
     z-index: 0;
 }
@@ -154,6 +154,21 @@ header .lay_btn {
     z-index: 1;
 }
 
+
+
+/* Fundo escuro */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+    /* Inicia oculto */
+}
+
 header .btn_white {
     transition: 500ms;
     background-color: var(--base4);
@@ -168,25 +183,22 @@ header .btn_white {
     margin: 10px 0px 30px 0px;
 }
 
-header .bons{
 
-}
-
-
-
-.lay_form {
+header .lay_form {
     display: none;
     position: absolute;
-    height: 60vh;
-    width: 30%;
+    height: 40vh;
+    width: 90vw;
     z-index: 2;
-    right: 5vw;
-    bottom: 10vh;
+    right: auto;
+    bottom: 30vh;
     background: linear-gradient(312deg, #01052d, #2a2b51);
     box-shadow: 4px 4px 7px 0px rgba(255, 255, 255, 0.192);
     color: var(--textsWhite);
     border-radius: 1.3vw;
 }
+
+
 
 form {
     display: flex;
@@ -359,6 +371,28 @@ form input[type="button"]:hover {
     }
 }
 
+@media (min-width: 712px) {
+
+    header h1,
+    h1 span {
+        font-size: 54px;
+    }
+
+    header h2,
+    h3 {
+        font-size: 27px;
+    }
+
+    header .btn_white {
+        font-size: 28px;
+    }
+
+    header .lay_form {
+        justify-content: center;
+    }
+
+}
+
 /* Se a largura for maior ou igual a 768px pixel */
 @media (min-width: 768px) {
     header .logo {
@@ -422,7 +456,6 @@ form input[type="button"]:hover {
     }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {}
 
 @media (min-width: 1024px) and (max-height: 800px) {
 
@@ -486,11 +519,26 @@ form input[type="button"]:hover {
         display: none;
     }
 
+    header .lay_form {
+        display: flex;
+        position: absolute;
+        height: 60vh;
+        width: 30%;
+        z-index: 2;
+        right: 5vw;
+        bottom: 10vh;
+        background: linear-gradient(312deg, #01052d, #2a2b51);
+        box-shadow: 4px 4px 7px 0px rgba(255, 255, 255, 0.192);
+        color: var(--textsWhite);
+        border-radius: 1.3vw;
+    }
+
     .lay_form {
         position: absolute;
         display: flex;
     }
 }
+
 
 
 
@@ -520,6 +568,16 @@ form input[type="button"]:hover {
     }
 }
 
+@media (min-width: 1334px) and (min-height: 632px) {
+    header .esquerdo {
+        top: 19vw;
+    }
+
+    .lay_form {
+        bottom: 0vh;
+    }
+}
+
 
 @media (min-width: 1358px) {
     header .logo {
@@ -542,7 +600,8 @@ form input[type="button"]:hover {
         left: 73vw;
     }
 
-    header h2, h3 {
+    header h2,
+    h3 {
         font-size: 20px;
     }
 
@@ -554,10 +613,83 @@ form input[type="button"]:hover {
         font-size: 1.2vw;
     }
 
+
+
     header .lay_form {
+        display: flex;
         height: 59vh;
         width: 26%;
         right: 7vw;
         justify-content: center;
+        bottom: 10vh;
+    }
+
+}
+
+@media (min-width: 1524px) and (min-height: 800px) {
+    header .centro {
+        align-items: flex-start;
+        height: 60vh;
+    }
+
+    header .esquerdo {
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+        top: 21vw;
+        height: 40vh;
+        z-index: 1;
+    }
+
+    header .direito {
+        top: 0vh;
+        align-items: flex-start;
+        height: 95vh;
+    }
+
+    header h1,
+    h1 span {
+        font-size: 67px;
+    }
+
+    header h1,
+    h2,
+    h3 {
+        padding: 0vw;
+    }
+
+    header a {
+        position: absolute;
+        bottom: 68vh;
+        left: 72vw;
+    }
+
+    header .logo {
+        width: 16vw;
+        z-index: 1;
+    }
+
+    header h2,
+    h3 {
+        font-size: 28px;
+        padding: 0vw 0vw;
+        top: 0vh;
+    }
+
+    header img.frame1 {
+        width: 54vw;
+        left: 4vw;
+    }
+
+    header .btn_white {
+        font-size: 16px;
+        display: none;
+    }
+
+    .lay_form {
+        position: absolute;
+        display: flex;
     }
 }

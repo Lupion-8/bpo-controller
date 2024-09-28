@@ -217,3 +217,24 @@ function letrinhaBonitinhaAnimada() {
 setTimeout(() => {
     letrinhaBonitinhaAnimada();
 }, 1000);
+
+//alert("Largura da página: " + document.documentElement.clientWidth + "px, Altura da página: " + document.documentElement.clientHeight + "px");
+
+function mostrarLogin() {
+    document.getElementById('overlay').style.display = 'block'; // Exibe o fundo
+    document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário
+}
+
+// Função para ocultar o formulário de login e o fundo escuro
+function fecharLogin() {
+    document.getElementById('overlay').style.display = 'none'; // Esconde o fundo
+    document.querySelector('.lay_form').style.display = 'none'; // Esconde o formulário
+}
+
+// Fecha o formulário ao clicar fora dele (opcional)
+document.getElementById('overlay').addEventListener('click', fecharLogin);
+
+
+document.querySelector('header .btn_white').addEventListener('click',()=>{
+    mostrarLogin();
+});
