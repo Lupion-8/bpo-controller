@@ -139,6 +139,8 @@ $(window).on('scroll', function (event) {
     }
 });
 
+
+
 const icon = document.getElementById('icon');
 const sections = document.querySelectorAll('section, footer');
 
@@ -195,6 +197,8 @@ function toggleAnswer(answerId) {
     }
 }
 
+
+
 function letrinhaBonitinhaAnimada() {
     const textElement = document.getElementById("animated-text");
     const letters = textElement.innerText.split('');
@@ -209,10 +213,9 @@ function letrinhaBonitinhaAnimada() {
         // Aplica a cor #ed8534 letra por letra com um delay
         setTimeout(() => {
             span.style.color = 'var(--base7)';
-        }, index * 25); // Atraso de 100ms por letra
+        }, index * 50); // Atraso de 100ms por letra
     });
 }
-
 
 setTimeout(() => {
     letrinhaBonitinhaAnimada();
@@ -225,7 +228,7 @@ function mostrarLogin() {
     document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário
 }
 
-// Função para ocultar o formulário de login e o fundo escuro
+// Função para ocultar o formulário
 function fecharLogin() {
     document.getElementById('overlay').style.display = 'none'; // Esconde o fundo
     document.querySelector('.lay_form').style.display = 'none'; // Esconde o formulário
@@ -233,7 +236,6 @@ function fecharLogin() {
 
 // Fecha o formulário ao clicar fora dele (opcional)
 document.getElementById('overlay').addEventListener('click', fecharLogin);
-
 
 document.querySelector('header .btn_white').addEventListener('click',()=>{
     mostrarLogin();

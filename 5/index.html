@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abertura de empresa</title>
-    <link rel="stylesheet" type="text/css" href="./style.css?v=01" />
+    <link rel="stylesheet" type="text/css" href="./css/header.css?v=01" />
+    <link rel="stylesheet" type="text/css" href="./css/passos.css?v=01" />
+    <link rel="stylesheet" type="text/css" href="./css/persuasivo.css?v=01" />
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -22,14 +24,17 @@
         <div class="centro">
             <div class="esquerdo">
                 <a href="./">
-                <img class="logo" src="./imgs/logo-phone.png" srcset="./imgs/logo-desktop.png 1000w, ./imgs/logo-phone.png 700w"
-                    sizes="(max-width: 900px) 700px, 1000px" alt="Controller - Contadores e Auditores Associados">
+                    <img class="logo" src="./imgs/logo-phone.png"
+                        srcset="./imgs/logo-desktop.png 1000w, ./imgs/logo-phone.png 700w"
+                        sizes="(max-width: 900px) 700px, 1000px" alt="Controller - Contadores e Auditores Associados">
                 </a>
 
                 <h1><span id="animated-text">Sua empresa aberta</span> em até 72 horas</h1>
 
-                <h2>Conquiste o sucesso empresarial. Conte com nossa contabilidade especializada em abertura de sua empresa!</h2>
-                <h3>Contribuir para o crescimento dos negócios de nossos clientes, maximizando os seus resultados com serviços de alta qualidade.</h3>
+                <h2>Conquiste o sucesso empresarial. Conte com nossa contabilidade especializada em abertura de sua
+                    empresa!</h2>
+                <h3>Contribuir para o crescimento dos negócios de nossos clientes, maximizando os seus resultados com
+                    serviços de alta qualidade.</h3>
             </div>
 
             <div class="direito">
@@ -41,33 +46,181 @@
             <button class="btn_white">Fale com um especialista</button>
         </div>
 
-        
+
         <div id="overlay"></div>
         <div class="lay_form">
             <form class="form01" method="POST">
-                <p>Abra sua empresa hoje! Contate-nos e cresça!</p>
+                <p><b>Abra sua empresa hoje!</b><br>Contate-nos e cresça!</p>
                 <div>
                     <i class="fas fa-user-circle" style="color: #ffffff;"></i>
                     <input type="text" placeholder="Seu nome" />
                 </div>
-                
+
                 <div>
                     <i class="fas fa-envelope" style="color: #ffffff;"></i>
                     <input type="email" placeholder="Seu e-mail" />
                 </div>
-               
+
                 <div>
                     <i class="fas fa-mobile-alt" style="color: #ffffff;"></i>
                     <input type="tel" placeholder="Seu telefone" />
                 </div>
-              
+
                 <input type="button" value="Enviar" />
             </form>
         </div>
     </header>
 
-    <section>
-       
+    <section class="sec-passos">
+        <div class="title">
+            <h2>Sua empresa aberta em 3 passos!</h2>
+        </div>
+
+        <div class="passos-abrir-empresa">
+            <div class="step-progress">
+                <span class="step step-1"><i class="fas fa-comments"></i></span>
+                <span class="bar bar-1"></span>
+                <span class="step step-2"><i class="fas fa-file-pdf"></i></span>
+                <span class="bar bar-2"></span>
+                <span class="step step-3"><i class="fas fa-building"></i></span>
+            </div>
+
+            <div class="os-passos">
+                <div class="pas">
+                    <span class="numPas">1</span>
+                    <span class="text-title"></span>
+                    <p class="text-descri"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lay_btn">
+            <button class="btn_white">Entrar em contato!</button>
+        </div>
+
+        <script>
+            const step1 = document.querySelector('.step-1');
+            const step2 = document.querySelector('.step-2');
+            const step3 = document.querySelector('.step-3');
+
+            const bar1 = document.querySelector('.bar-1');
+            const bar2 = document.querySelector('.bar-2');
+
+            const num = document.querySelector('.numPas');
+            const textTitle = document.querySelector('.text-title');
+            const textDescri = document.querySelector('.text-descri');
+
+            let startX;
+
+            const swipeArea = document.querySelector('.pas');
+
+            // Variável para armazenar o passo atual
+            let currentStep = 1;
+
+            function setActiveStep(stepNum) {
+                const steps = [step1, step2, step3];
+                const bars = [bar1, bar2];
+
+                // Atualizar as cores dos steps e barras
+                steps.forEach((step, index) => {
+                    step.style.borderColor = index < stepNum ? '#02033e' : '#474750';
+                });
+                bars.forEach((bar, index) => {
+                    bar.style.backgroundColor = index < stepNum - 1 ? '#02033e' : '#474750';
+                });
+
+                // Atualizar o conteúdo de acordo com o passo
+                switch (stepNum) {
+                    case 1:
+                        setdata(1, 'Reunião de alinhamento', 'Atendimento personalizado, para entendermos melhor sobre seu projeto e oferecermos a melhor solução.');
+                        break;
+                    case 2:
+                        setdata(2, 'Envio de documentação', 'Recebimento de toda a documentação de forma digital. Você não precisa sair do conforto de sua casa.');
+                        break;
+                    case 3:
+                        setdata(3, 'Sonho realizado!', 'Oba! Seu CNPJ saiu e sua empresa já tá pronta pra te receber e te acompanhar nessa jornada.');
+                        break;
+                }
+
+                // Atualizar a variável currentStep
+                currentStep = stepNum;
+            }
+
+            function setdata(n, t, tx) {
+                num.textContent = n;
+                textTitle.textContent = t;
+                textDescri.textContent = tx;
+            }
+
+            // Iniciar com o passo 1 ativo
+            setActiveStep(1);
+
+            // Eventos de clique nos steps
+            step1.addEventListener('click', () => setActiveStep(1));
+            step2.addEventListener('click', () => setActiveStep(2));
+            step3.addEventListener('click', () => setActiveStep(3));
+
+            // Evento ao iniciar o toque
+            swipeArea.addEventListener('touchstart', (e) => {
+                const touch = e.touches[0];
+                startX = touch.clientX;
+            });
+
+            // Evento ao terminar o toque
+            swipeArea.addEventListener('touchend', (e) => {
+                const touch = e.changedTouches[0];
+                const endX = touch.clientX;
+
+                handleSwipe(startX, endX);
+            });
+
+            // Função para calcular a direção do swipe (apenas esquerda/direita)
+            function handleSwipe(startX, endX) {
+                const diffX = endX - startX;
+
+                // Limite mínimo para considerar um deslize
+                const minSwipeDistance = 30; // Ajuste conforme necessário
+
+                if (Math.abs(diffX) > minSwipeDistance) {
+                    if (diffX > 0) {
+                        // Deslizou para a direita (passo anterior)
+                        if (currentStep > 1) {
+                            setActiveStep(currentStep - 1);
+                        }
+                    } else {
+                        // Deslizou para a esquerda (próximo passo)
+                        if (currentStep < 3) {
+                            setActiveStep(currentStep + 1);
+                        }
+                    }
+                }
+            }
+
+        </script>
+    </section>
+
+    <section class="sec-persuasivo">
+    <sgv></sgv>
+
+        <div class="title">
+            <h2>Abrir sua empresa nunca foi tão fácil e rápido!</h2>
+        </div>
+
+        <div class="">
+            <img class="frame-2" src="./imgs/frame2-phone.png"
+                srcset="./imgs/frame2-desktop.png 1000w, ./imgs/frame2-phone.png 700w"
+                sizes="(max-width: 900px) 700px, 1000px" alt="Empresa | Controller Contadores e Auditores Associados">
+
+            <span>Na Controller, você não precisa se preocupar com burocracias. Nossa equipe cuida de toda a
+                documentação para você, de forma ágil e eficiente. Em pouco tempo, sua empresa estará pronta para
+                começar!</span>
+
+        </div>
+
+        <div class=""></div>
+
+        </div>
+
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

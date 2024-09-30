@@ -1,0 +1,18 @@
+.sec-persuasivo{
+    background-image: url('./../imgs/At3.svg');
+    background-repeat: no-repeat; /* Evita que o SVG se repita */
+    background-size: cover; /* Ajusta o SVG para cobrir todo o espaço */
+    background-position: center; /* Centraliza o SVG */
+    width: 100%; /* Defina as dimensões que precisar */
+    height: 100vh; /* Exemplo: ocupa a altura total da viewport */
+}
+
+.sec-persuasivo .title h2 {
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.frame-2{
+    width: 150px;
+}

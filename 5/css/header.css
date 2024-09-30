@@ -134,9 +134,9 @@ h3 {
     transition: color 0.3s ease-in-out;
 }
 
-header h1,
-h1 span {
+header h1, h1 span {
     font-size: 25px;
+    text-transform: uppercase;
 }
 
 header h2,
@@ -145,6 +145,10 @@ h3 {
     font-size: 13px;
     top: 33vh;
     padding: 3vw 0vw;
+}
+
+h3 {
+    font-style: italic;
 }
 
 header .lay_btn {
@@ -186,8 +190,8 @@ header .btn_white {
 
 header .lay_form {
     display: none;
-    position: absolute;
-    height: 40vh;
+    position: fixed;
+    height: 51vh;
     width: 90vw;
     z-index: 2;
     right: auto;
@@ -196,6 +200,7 @@ header .lay_form {
     box-shadow: 4px 4px 7px 0px rgba(255, 255, 255, 0.192);
     color: var(--textsWhite);
     border-radius: 1.3vw;
+    justify-content: center;
 }
 
 
@@ -204,7 +209,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1vw;
+    gap: 2vw;
     padding: 1vw;
     text-align: center;
     justify-content: center;
@@ -212,16 +217,19 @@ form {
 
 form p {
     margin-bottom: 4vw;
+    width: 80vw;
 }
 
 form div {
     display: flex;
-    align-items: center;
-    gap: 1vw;
+    align-items: flex-end;
+    gap: 0vw 3vw;
 }
 
 form input {
-    padding: 0.5vw;
+    padding: 2vw;
+    padding-bottom: 3px;
+    padding-left: 0px;
     background-color: transparent;
     border-style: none;
     border-bottom-style: solid;
@@ -247,6 +255,10 @@ form input[type="button"] {
 form input[type="button"]:hover {
     background-color: #969594;
     transition: 200ms;
+}
+
+form p b {
+    font-size: 22px;
 }
 
 /* Se a altura for menor ou igual a 480 pixel */
@@ -290,6 +302,12 @@ form input[type="button"]:hover {
     header .btn_white {
         margin: 54px 0px 10px 0px;
     }
+
+    header .lay_form {
+        height: 38vh;
+        bottom: 36vh;
+    }
+
 }
 
 
@@ -336,12 +354,20 @@ form input[type="button"]:hover {
     header img.frame1 {
         width: 130vw;
     }
+
+    header .lay_form {
+        height: 44vh;
+    }
 }
 
 /* Se a largura for maior ou igual a 540px pixel */
 @media (min-width: 414px) {
     header .logo {
         width: 35vw;
+    }
+
+    form p b {
+        font-size: 29px;
     }
 }
 
@@ -368,6 +394,10 @@ form input[type="button"]:hover {
 
     header .direito {
         top: 28vh;
+    }
+
+    header .lay_form {
+        height: 50vh;
     }
 }
 
@@ -422,6 +452,28 @@ form input[type="button"]:hover {
         border-radius: 7px;
         font-size: 28px;
     }
+
+    header .lay_form {
+        height: 48vh;
+        width: 73vw;
+    }
+
+    form input {
+        font-size: 28px;
+    }
+
+    i.fas {
+        font-size: 30px;
+    }
+
+    form p {
+        font-size: 25px;
+    }
+
+    form p b {
+        font-size: 35px;
+    }
+
 }
 
 /* Se a largura for maior ou igual a 820px pixel */
@@ -453,6 +505,26 @@ form input[type="button"]:hover {
     header .btn_white {
         border-radius: 7px;
         font-size: 32px;
+    }
+
+    form input {
+        font-size: 35px;
+    }
+
+    i.fas {
+        font-size: 47px;
+    }
+
+    form p {
+        font-size: 31px;
+    }
+
+    form p b {
+        font-size: 48px;
+    }
+
+    form input {
+        padding-bottom: 7px;
     }
 }
 
@@ -537,6 +609,32 @@ form input[type="button"]:hover {
         position: absolute;
         display: flex;
     }
+
+    form {
+        gap: 1vw;
+        overflow: hidden;
+    }
+
+    form input {
+        font-size: 15px;
+    }
+
+    form p {
+        margin-bottom: 0vw;
+        font-size: 16px;
+    }
+
+    i.fas {
+        font-size: 24px;
+    }
+
+    form p b {
+        font-size: 22px;
+    }
+
+    form div {
+        gap: 0vw 1vw;
+    }
 }
 
 
@@ -565,6 +663,11 @@ form input[type="button"]:hover {
 
     .lay_form {
         box-shadow: 7px 7px 7px 0px rgba(255, 255, 255, 0.192);
+    }
+
+    .lay_form {
+        position: absolute;
+        display: flex;
     }
 }
 
@@ -613,8 +716,6 @@ form input[type="button"]:hover {
         font-size: 1.2vw;
     }
 
-
-
     header .lay_form {
         display: flex;
         height: 59vh;
@@ -624,7 +725,13 @@ form input[type="button"]:hover {
         bottom: 10vh;
     }
 
+    form {
+        gap: 0vw;
+    }
+
 }
+
+
 
 @media (min-width: 1524px) and (min-height: 800px) {
     header .centro {
@@ -688,8 +795,123 @@ form input[type="button"]:hover {
         display: none;
     }
 
-    .lay_form {
-        position: absolute;
+
+}
+
+
+@media (min-width: 1366px) and (min-height: 642px) {
+    html {
         display: flex;
+        justify-content: center;
+        overflow-x: hidden;
     }
+
+    body {
+        width: 1366px;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 768px;
+    }
+
+    header .centro {
+
+        margin: 100px auto;
+    }
+
+    header a {
+        bottom: 468px;
+        left: 962px;
+    }
+
+    header .direito {
+        padding: 14px 0vw;
+        top: 0px;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    header .esquerdo {
+        top: 146px;
+        height: auto;
+    }
+
+    header .logo {
+        width: 210px;
+    }
+
+    header img.frame1 {
+        left: 0px;
+        width: 786px;
+    }
+
+  
+
+    header .direito {
+
+        width: min-content;
+    }
+
+    header .esquerdo {
+        height: 280px;
+        top: 270px;
+        padding: 1px 45px;
+    }
+
+    header h1, h2, h3 {
+        padding: 0px;
+    }
+
+    header .centro {
+        height: auto;
+    }
+
+    header .particles {
+        width: 1366px;
+        height: 768px;
+    }
+
+    header .lay_form {
+        height: min-content;
+        left: 381px;
+        bottom: 250px;
+        right: 0px;
+        position: relative;
+        width: 34%;
+    }
+
+    form {
+        gap: 0px;
+        overflow: hidden;
+        padding: 38px;
+    }
+
+    form p {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    form p b {
+        font-size: 34px;
+    }
+
+    i.fas {
+        font-size: 32px;
+    }
+
+    form div {
+        gap: 0px 20px;
+    }
+
+    form input {
+        font-size: 21px;
+        padding: 26px;
+        padding-left: 0px;
+    }
+
+    form input[type="button"]{
+        margin-top: 40px;
+    }
+
 }
