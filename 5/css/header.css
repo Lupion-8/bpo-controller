@@ -43,6 +43,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 header .particles {
@@ -108,7 +109,8 @@ header #animated-text span {
     transition: color 0.3s ease-in-out;
 }
 
-header h1, h1 span {
+header h1,
+h1 span {
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -782,11 +784,12 @@ header form p b {
 
     body {
         width: 1366px;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     header {
         height: 768px;
+        overflow: hidden;
     }
 
     header .centro {
@@ -820,7 +823,11 @@ header form p b {
         width: 786px;
     }
 
-  
+    header h1,
+    header h1 span {
+        font-size: 51px;
+    }
+
 
     header .direito {
 
@@ -833,7 +840,7 @@ header form p b {
         padding: 1px 45px;
     }
 
-    header h1, 
+    header h1,
     header h2,
     header h3 {
         padding: 0px;
@@ -886,7 +893,7 @@ header form p b {
         padding-left: 0px;
     }
 
-    header form input[type="button"]{
+    header form input[type="button"] {
         margin-top: 40px;
     }
 
