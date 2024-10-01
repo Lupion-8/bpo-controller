@@ -1,0 +1,76 @@
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
+}
+
+section {
+    padding: 15px;
+}
+
+
+
+.sec-duvida .title h2 {
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--base1);
+}
+
+.sec-duvida .title h3{
+    text-align: center;
+}
+
+.sec-vantag .title h2 {
+    margin: 15px 0px;
+}
+
+.sec-vantag .vanteg-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.sec-vantag .vanteg-card {
+
+    background-image: url(./../imgs/logo-azul-opacity_10.png);
+    background-repeat: no-repeat;
+    background-position-x: -95px;
+    background-position-y: 10px;
+    background-size: 213px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    box-shadow: #05084ea3 0px 0px 14px 0px;
+    border-radius: 10px;
+    margin: 25px 0px;
+    background-color: var(--base4);
+}
+
+.sec-vantag .vanteg-card i {
+    font-size: 38px;
+    margin: 15px 0px;
+    color: var(--base1);
+}
+
+.sec-vantag .vanteg-card span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--base1);
+}
+
+
+.sec-vantag .vanteg-card p {
+    font-size: 18px;
+    margin: 15px 0px;
+}

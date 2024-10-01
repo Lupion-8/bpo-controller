@@ -1,18 +1,73 @@
-.sec-persuasivo{
-    background-image: url('./../imgs/At3.svg');
-    background-repeat: no-repeat; /* Evita que o SVG se repita */
-    background-size: cover; /* Ajusta o SVG para cobrir todo o espaço */
-    background-position: center; /* Centraliza o SVG */
-    width: 100%; /* Defina as dimensões que precisar */
-    height: 100vh; /* Exemplo: ocupa a altura total da viewport */
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
 }
+
 
 .sec-persuasivo .title h2 {
     font-size: 21px;
     text-align: center;
     text-transform: uppercase;
+    color: var(--base1);
 }
 
-.frame-2{
-    width: 150px;
+.sec-persuasivo .lay-pers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-persuasivo .text1-pers {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.sec-persuasivo .frame-2 {
+    width: 200px;
+}
+
+.sec-persuasivo .text2-pers{
+    text-align: center;
+}
+
+.sec-persuasivo .text2-pers span {
+    color: #009f04;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.sec-persuasivo .text2-pers p{
+    margin: 10px;
+}
+
+
+.sec-persuasivo .lay_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.sec-persuasivo .btn_white {
+    transition: 500ms;
+    background-color: var(--base1);
+    color: var(--textsWhite);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 30px 0px;
+
 }

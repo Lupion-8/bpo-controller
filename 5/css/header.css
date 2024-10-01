@@ -36,32 +36,6 @@ html {
 }
 
 
-
-/* Estiliza a parte geral da barra de rolagem */
-::-webkit-scrollbar {
-    width: 12px;
-    /* largura */
-}
-
-/* Estiliza o 'polegar' da barra de rolagem */
-::-webkit-scrollbar-thumb {
-    transition: 1s;
-    background-color: var(--base1);
-    /* cor do polegar */
-    border-radius: 1px;
-    /* arredondamento dos cantos */
-}
-
-/* Estiliza o 'trilho' da barra de rolagem */
-::-webkit-scrollbar-track {
-    background: var(--base4);
-    /* cor do trilho */
-    border-radius: 6px;
-    /* arredondamento dos cantos */
-}
-
-
-
 header {
     background: linear-gradient(356deg, var(--base1), var(--base5));
     width: 100%;
@@ -124,13 +98,13 @@ header .esquerdo {
 }
 
 header h1,
-h2,
-h3 {
+header h2,
+header h3 {
     padding: 1vw;
     z-index: 1;
 }
 
-#animated-text span {
+header #animated-text span {
     transition: color 0.3s ease-in-out;
 }
 
@@ -140,14 +114,14 @@ header h1, h1 span {
 }
 
 header h2,
-h3 {
+header h3 {
     position: relative;
     font-size: 13px;
     top: 33vh;
     padding: 3vw 0vw;
 }
 
-h3 {
+header h3 {
     font-style: italic;
 }
 
@@ -161,7 +135,7 @@ header .lay_btn {
 
 
 /* Fundo escuro */
-#overlay {
+header #overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -205,7 +179,7 @@ header .lay_form {
 
 
 
-form {
+header form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,18 +189,18 @@ form {
     justify-content: center;
 }
 
-form p {
+header form p {
     margin-bottom: 4vw;
     width: 80vw;
 }
 
-form div {
+header form div {
     display: flex;
     align-items: flex-end;
     gap: 0vw 3vw;
 }
 
-form input {
+header form input {
     padding: 2vw;
     padding-bottom: 3px;
     padding-left: 0px;
@@ -239,7 +213,7 @@ form input {
     color: var(--textsWhite);
 }
 
-form input[type="button"] {
+header form input[type="button"] {
     background-color: var(--base6);
     color: var(--textsWhite);
     border-style: none;
@@ -252,12 +226,12 @@ form input[type="button"] {
     font-weight: 600;
 }
 
-form input[type="button"]:hover {
+header form input[type="button"]:hover {
     background-color: #969594;
     transition: 200ms;
 }
 
-form p b {
+header form p b {
     font-size: 22px;
 }
 
@@ -292,7 +266,7 @@ form p b {
     }
 
     header h2,
-    h3 {
+    header h3 {
         position: relative;
         font-size: 19px;
         top: 33vh;
@@ -318,7 +292,7 @@ form p b {
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 14px;
     }
 }
@@ -330,16 +304,16 @@ form p b {
     }
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 32px;
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 18px;
     }
 
-    h3 {
+    header h3 {
         font-weight: lighter;
         font-style: italic;
     }
@@ -366,7 +340,7 @@ form p b {
         width: 35vw;
     }
 
-    form p b {
+    header form p b {
         font-size: 29px;
     }
 }
@@ -379,7 +353,7 @@ form p b {
     }
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 35px;
     }
 
@@ -404,12 +378,12 @@ form p b {
 @media (min-width: 712px) {
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 54px;
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 27px;
     }
 
@@ -430,7 +404,7 @@ form p b {
     }
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 48px;
     }
 
@@ -443,7 +417,7 @@ form p b {
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 25px;
         padding: 2vw 0vw;
     }
@@ -458,19 +432,19 @@ form p b {
         width: 73vw;
     }
 
-    form input {
+    header form input {
         font-size: 28px;
     }
 
-    i.fas {
+    header i.fas {
         font-size: 30px;
     }
 
-    form p {
+    header form p {
         font-size: 25px;
     }
 
-    form p b {
+    header form p b {
         font-size: 35px;
     }
 
@@ -480,7 +454,7 @@ form p b {
 @media (min-width: 820px) {
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 51px;
     }
 }
@@ -492,12 +466,12 @@ form p b {
     }
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 60px;
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 32px;
         padding: 2vw 0vw;
     }
@@ -507,23 +481,23 @@ form p b {
         font-size: 32px;
     }
 
-    form input {
+    header form input {
         font-size: 35px;
     }
 
-    i.fas {
+    header i.fas {
         font-size: 47px;
     }
 
-    form p {
+    header form p {
         font-size: 31px;
     }
 
-    form p b {
+    header form p b {
         font-size: 48px;
     }
 
-    form input {
+    header form input {
         padding-bottom: 7px;
     }
 }
@@ -554,13 +528,13 @@ form p b {
     }
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 36px;
     }
 
     header h1,
-    h2,
-    h3 {
+    header h2,
+    header h3 {
         padding: 0vw;
     }
 
@@ -576,7 +550,7 @@ form p b {
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 17px;
         padding: 0vw 0vw;
         top: 0vh;
@@ -605,34 +579,34 @@ form p b {
         border-radius: 1.3vw;
     }
 
-    .lay_form {
+    header .lay_form {
         position: absolute;
         display: flex;
     }
 
-    form {
+    header form {
         gap: 1vw;
         overflow: hidden;
     }
 
-    form input {
+    header form input {
         font-size: 15px;
     }
 
-    form p {
+    header form p {
         margin-bottom: 0vw;
         font-size: 16px;
     }
 
-    i.fas {
+    header i.fas {
         font-size: 24px;
     }
 
-    form p b {
+    header form p b {
         font-size: 22px;
     }
 
-    form div {
+    header form div {
         gap: 0vw 1vw;
     }
 }
@@ -643,29 +617,29 @@ form p b {
 @media (min-width: 1280px) {
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 49px;
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 22px;
     }
 
-    form input {
+    header form input {
         font-size: 1.7vw;
     }
 
-    form p {
+    header form p {
 
         font-size: 2vw;
     }
 
-    .lay_form {
+    header .lay_form {
         box-shadow: 7px 7px 7px 0px rgba(255, 255, 255, 0.192);
     }
 
-    .lay_form {
+    header .lay_form {
         position: absolute;
         display: flex;
     }
@@ -676,7 +650,7 @@ form p b {
         top: 19vw;
     }
 
-    .lay_form {
+    header .lay_form {
         bottom: 0vh;
     }
 }
@@ -704,15 +678,15 @@ form p b {
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 20px;
     }
 
-    form p {
+    header form p {
         font-size: 1.1vw;
     }
 
-    form input {
+    header form input {
         font-size: 1.2vw;
     }
 
@@ -725,7 +699,7 @@ form p b {
         bottom: 10vh;
     }
 
-    form {
+    header form {
         gap: 0vw;
     }
 
@@ -757,13 +731,13 @@ form p b {
     }
 
     header h1,
-    h1 span {
+    header h1 span {
         font-size: 67px;
     }
 
     header h1,
-    h2,
-    h3 {
+    header h2,
+    header h3 {
         padding: 0vw;
     }
 
@@ -779,7 +753,7 @@ form p b {
     }
 
     header h2,
-    h3 {
+    header h3 {
         font-size: 28px;
         padding: 0vw 0vw;
         top: 0vh;
@@ -859,7 +833,9 @@ form p b {
         padding: 1px 45px;
     }
 
-    header h1, h2, h3 {
+    header h1, 
+    header h2,
+    header h3 {
         padding: 0px;
     }
 
@@ -881,36 +857,36 @@ form p b {
         width: 34%;
     }
 
-    form {
+    header form {
         gap: 0px;
         overflow: hidden;
         padding: 38px;
     }
 
-    form p {
+    header form p {
         font-size: 25px;
         margin-bottom: 15px;
     }
 
-    form p b {
+    header form p b {
         font-size: 34px;
     }
 
-    i.fas {
+    header i.fas {
         font-size: 32px;
     }
 
-    form div {
+    header form div {
         gap: 0px 20px;
     }
 
-    form input {
+    header form input {
         font-size: 21px;
         padding: 26px;
         padding-left: 0px;
     }
 
-    form input[type="button"]{
+    header form input[type="button"]{
         margin-top: 40px;
     }
 

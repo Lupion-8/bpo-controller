@@ -1,0 +1,76 @@
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
+}
+
+section {
+    padding: 15px;
+}
+
+.sec-servis{
+    background: linear-gradient(254deg, var(--base1), var(--base5))
+}
+
+.sec-servis .title h2 {
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--textsWhite);
+}
+
+
+
+.sec-servis .text1-servis{
+    color: var(--textsWhite);
+}
+
+.sec-servis .card-serv {
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: var(--base4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.sec-servis .card-serv span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--base7);
+}
+
+.sec-servis .card-serv p{
+    margin: 10px 0px;
+}
+
+.sec-servis .lay_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.sec-servis .btn_white {
+    transition: 500ms;
+    background-color: var(--base4);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 30px 0px;
+}
+

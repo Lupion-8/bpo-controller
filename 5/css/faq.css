@@ -1,0 +1,77 @@
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
+}
+
+section {
+    padding: 15px;
+}
+
+.sec-vantag .title h2 {
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--base1);
+}
+
+.accordion-item.expanded .accordion-content {
+    display: block;
+}
+
+.accordion {
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.accordion-item {
+    border-top: 1px solid #ccc;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.accordion-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d0a64;
+}
+
+.accordion-icon {
+    font-size: 1.2em;
+    color: #888;
+    transition: transform .3s;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.farrr {
+    color: var(--cor-primaria);
+}
+
+.accordion-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6A6972;
+    margin: 0;
+    font-family: 'arial';
+}
+
+

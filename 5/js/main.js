@@ -240,3 +240,29 @@ document.getElementById('overlay').addEventListener('click', fecharLogin);
 document.querySelector('header .btn_white').addEventListener('click',()=>{
     mostrarLogin();
 });
+
+
+const carouselItems = document.querySelector(".carousel-items")
+    , prevButton = document.querySelector(".carousel-prev")
+    , nextButton = document.querySelector(".carousel-next");
+    let currentIndex = 0;
+
+    prevButton.addEventListener("click", (()=>{
+        currentIndex > 0 && (currentIndex--,
+        carouselItems.style.transform = `translateX(-${100 * currentIndex / 1.5}%)`)
+    }
+    ));
+
+    nextButton.addEventListener("click", (()=>{
+        currentIndex < 3 && (currentIndex++,
+        carouselItems.style.transform = `translateX(-${100 * currentIndex / 1.5}%)`)
+    }
+    ));   
+
+
+    for (var e = document.getElementsByClassName("accordion-item"), t = 0; t < e.length; t++)
+        e[t].querySelector(".accordion-header").addEventListener("click", n);
+    function n(e) {
+        this.parentNode.classList.toggle("expanded"),
+        "rotate(180deg)" == this.parentNode.querySelector(".accordion-icon").style.webkitTransform ? this.parentNode.querySelector(".accordion-icon").style.transform = "rotate(0deg)" : this.parentNode.querySelector(".accordion-icon").style.transform = "rotate(180deg)"
+    }
