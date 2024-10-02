@@ -47,11 +47,6 @@ section {
     cursor: pointer;
 }
 
-.sec-passos .step:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
 .sec-passos .bar {
     width: 80px;
     height: 10px;
@@ -117,5 +112,172 @@ section {
     font-weight: bold;
     font-size: 15px;
     margin: 10px 0px 30px 0px;
+
+}
+
+.sec-passos .passos-abrir-empresa-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sec-passos {
+        padding: 15px 129px;
+    }
+
+    .sec-passos .step,
+    .sec-passos .numPas {
+        padding: 20px 20px;
+    }
+
+    .sec-passos .bar {
+        width: 100px;
+    }
+
+    .step i {
+        font-size: 39px;
+    }
+
+    .sec-passos .title h2 {
+        font-size: 25px;
+    }
+
+    .sec-passos .btn_white {
+        font-size: 23px;
+    }
+
+    .sec-passos .text-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .sec-passos .text-descri {
+        font-size: 22px;
+    }
+
+    .sec-passos .numPas {
+        padding: 5px 14px;
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .sec-passos .bar {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 800px) {
+
+    .sec-passos{
+        background-image: url('./../imgs/At3.svg');
+        background-size: cover;  
+
+    }
+
+    .sec-passos .title h2 {
+        font-size: 30px;
+        margin: 50px 0px;
+    }
+
+    .sec-passos .passos-abrir-empresa {
+        display: none;
+    }
+
+    .sec-passos .passos-abrir-empresa-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-passos .bar {
+        background-color: var(--base1);
+    }
+
+    .sec-passos {
+        padding: 15px 100px;
+    }
+
+    .sec-passos .os-passos {
+        display: flex;
+        margin: 10px 0px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sec-passos .pas {
+        gap: 6px;
+        width: 85%;
+        margin: 15px 15px;
+        z-index: 1;
+        background-color: var(--base4);
+    }
+
+    .sec-passos .text-title {
+        font-size: 22px;
+    }
+
+    .sec-passos .text-descri {
+        font-size: 19px;
+    }
+
+    .step i {
+        font-size: 29px;
+        width: 32px;
+        text-align: center;
+        color: var(--base1);
+    }
+
+    .sec-passos .step, .sec-passos .numPas {
+        border-color: var(--base1);
+    }
+
+    .sec-passos .step-progress {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec-passos .step{
+        transform: none;
+        cursor: pointer;
+        background-color: var(--base4);
+        z-index: 1;
+    }
+
+    .sec-passos .step, .sec-passos .numPas {
+        padding: 14px;
+        background-color: var(--base4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .lin, .lin-3 {
+        width: 10px;
+        background-color: var(--base1);
+        height: 52px;
+        position: relative;
+        /* transform: rotate(90deg); */
+        z-index: 0;
+        right: 38px;
+        top: 25px;
+    }
+
+    .sec-passos .numPas {
+        padding: 3px 11px;
+    }
+
+    .sec-passos .bar {
+        width: 208px;
+    }
+
+    .sec-passos .bar-3{
+        width: 0px;
+    }
+
+   
 
 }

@@ -13,7 +13,11 @@ section {
     padding: 15px;
 }
 
-.sec-vantag .title h2 {
+.sec-duvida .title{
+    text-align: center;
+}
+
+.sec-duvida .title h2 {
     font-size: 21px;
     text-align: center;
     text-transform: uppercase;
@@ -62,7 +66,7 @@ section {
 }
 
 .farrr {
-    color: var(--cor-primaria);
+    color: var(--base1);
 }
 
 .accordion-content p {
@@ -75,3 +79,31 @@ section {
 }
 
 
+@media (min-width: 768px) {
+    .sec-duvida{
+        padding: 15px 129px;
+    }
+   
+    
+    .sec-duvida .title h2 {
+        font-size: 25px;
+    }
+
+    .sec-duvida .title h3{
+        font-size: 22px;
+    }
+
+    .accordion-title {
+        font-size: 22px;
+    }
+
+    .accordion-content p {
+        font-size: 19px;
+    }
+
+    .farrr {
+        font-size: 22px;
+        margin: 0px 10px;
+    }
+   
+}

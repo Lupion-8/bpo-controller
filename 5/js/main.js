@@ -237,9 +237,50 @@ function fecharLogin() {
 // Fecha o formulário ao clicar fora dele (opcional)
 document.getElementById('overlay').addEventListener('click', fecharLogin);
 
-document.querySelector('header .btn_white').addEventListener('click',()=>{
-    mostrarLogin();
-});
+
+// Debounce function para limitar chamadas frequentes
+function debounce(fn, ms) {
+    let timer;
+    return _ => {
+        clearTimeout(timer);
+        timer = setTimeout(_ => {
+            timer = null;
+            fn.apply(this, arguments);
+        }, ms);
+    };
+}
+
+function ajustBtns() {
+    const btns = document.querySelectorAll('.btn_white');
+    const formDesktop = document.querySelector('.passos-abrir-empresa-desktop');
+    const displayValue = getComputedStyle(formDesktop).display;
+
+    btns.forEach(btn => {
+        // Remova qualquer listener existente antes de adicionar um novo para evitar duplicatas
+        btn.removeEventListener('click', mostrarLogin); // Supondo que você só adicione esse tipo de listener
+
+        if (displayValue === "none") {
+            btn.addEventListener('click', mostrarLogin);
+            btn.parentElement.href = '';
+            document.querySelector('.lay_form').style.display = 'none'; // Exibe o formulário
+        }else{
+            btn.parentElement.href = 'header';
+            document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário  
+        } 
+    });
+}
+
+// Debounce na função ajustBtns para evitar chamadas excessivas durante o resize
+const debouncedAjustBtns = debounce(ajustBtns, 250);
+
+window.addEventListener('resize', debouncedAjustBtns);
+
+ajustBtns(); // Chamada inicial para configurar os eventos corretamente ao carregar
+
+
+
+
+
 
 
 const carouselItems = document.querySelector(".carousel-items")
