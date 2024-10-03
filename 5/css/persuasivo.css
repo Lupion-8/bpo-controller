@@ -9,6 +9,14 @@
     --colorNone: #5c5c5c;
 }
 
+section {
+    padding: 15px;
+}
+
+.sec-persuasivo {
+    background-image: url('./../imgs/At2.svg');
+    background-size: cover;  
+}
 
 .sec-persuasivo .title h2 {
     font-size: 21px;
@@ -114,11 +122,7 @@
 
 @media (min-width: 1024px) and (max-height: 800px) {
 
-    .sec-persuasivo {
-        background-image: url('./../imgs/At2.svg');
-        background-size: cover;  
     
-    }
 
     .sec-persuasivo .title h2 {
         font-size: 30px;
@@ -179,5 +183,44 @@
         font-size: 22px;
         font-weight: bold;
         color: var(--colorNone);
+    }
+}
+
+@media (min-width: 1358px) {
+    .pers-ajust-1, .pers-ajust-2 {
+        width: 80%;
+    }
+
+    .sec-persuasivo .frame-2 {
+        width: 260px;
+    }
+
+    .text1-pers span {
+        font-size: 18px;
+    }
+    .sec-persuasivo .text1-pers {
+   
+        width: 580px;
+        height: 40px;
+    }
+    .sec-persuasivo .text2-pers span {
+        font-size: 20px;
+    }
+
+    .sec-persuasivo .text2-pers p {
+        font-size: 18px;
+    }
+
+    .pers-ajust-2 {
+        margin: 0px 0px;
+    }
+
+    .sec-persuasivo .btn_white {
+        font-size: 16px;
+    }
+    
+    .sec-persuasivo .text2-pers {
+        text-align: left;
+        width: 610px;
     }
 }

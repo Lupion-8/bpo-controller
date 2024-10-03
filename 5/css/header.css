@@ -785,6 +785,11 @@ header form p b {
     body {
         width: 1366px;
         overflow: hidden;
+        background-color: black;
+    }
+
+    section, footer{
+        background-color: white;
     }
 
     header {

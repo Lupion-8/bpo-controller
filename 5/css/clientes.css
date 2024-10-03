@@ -8,6 +8,15 @@
     --textsWhite: #ffffff;
     --colorNone: #5c5c5c;
 }
+section {
+    padding: 15px;
+}
+
+
+.sec-client {
+    background-image: url('./../imgs/At2.svg');
+    background-size: cover;
+}
 
 
 .sec-client .title h2 {
@@ -98,7 +107,7 @@
 
 .sec-client .client-chamada h2 {
     font-size: 21px;
-    color: var(--base1);
+    
     margin: 15px 0px;
 }
 
@@ -177,10 +186,7 @@
 
 @media (min-width: 1024px) and (max-height: 800px) {
 
-    .sec-client {
-        background-image: url('./../imgs/At2.svg');
-        background-size: cover;
-    }
+    
 
     .sec-client .title h2 {
         font-size: 30px;
@@ -225,4 +231,14 @@
         overflow-x: hidden;
     }
 
+}
+
+@media (min-width: 1358px) {
+    .sec-client .carousel-item {
+        padding: 20px;
+    }
+
+    .sec-client .btn_white {
+        font-size: 16px;
+    }
 }

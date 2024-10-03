@@ -13,7 +13,7 @@ section {
     padding: 15px;
 }
 
-.sec-servis{
+.sec-servis {
     background: linear-gradient(254deg, var(--base1), var(--base5))
 }
 
@@ -26,7 +26,7 @@ section {
 
 
 
-.sec-servis .text1-servis{
+.sec-servis .text1-servis {
     color: var(--textsWhite);
 }
 
@@ -49,7 +49,7 @@ section {
     color: var(--base7);
 }
 
-.sec-servis .card-serv p{
+.sec-servis .card-serv p {
     margin: 10px 0px;
 }
 
@@ -75,8 +75,8 @@ section {
 }
 
 @media (min-width: 768px) {
-    .sec-servis{
-        padding: 15px 129px; 
+    .sec-servis {
+        padding: 15px 129px;
     }
 
     .sec-servis .title h2 {
@@ -109,7 +109,7 @@ section {
 
     .sec-servis {
         padding: 15px 100px;
-        
+
     }
 
     .sec-servis .text1-servis {
@@ -140,5 +140,23 @@ section {
     .sec-servis .btn_white {
 
         margin: 30px 0px 30px 0px;
+    }
+}
+
+@media (min-width: 1358px) {
+    .sec-servis .card-serv span {
+        font-size: 18px;
+    }
+
+    .sec-servis .card-serv p {
+        font-size: 16px;
+    }
+
+    .sec-servis .card-serv {
+        height: 138px;
+    }
+
+    .sec-servis .btn_white {
+        font-size: 16px;
     }
 }

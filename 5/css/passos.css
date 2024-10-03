@@ -13,6 +13,11 @@ section {
     padding: 15px;
 }
 
+.sec-passos {
+    background-image: url('./../imgs/At3.svg');
+    background-size: cover;
+}
+
 .sec-passos .title h2 {
     font-size: 21px;
     text-align: center;
@@ -77,6 +82,7 @@ section {
     box-shadow: black 0px 0px 10px 0px;
     margin: 18px 0px;
     width: 84%;
+    background-color: var(--base4);
 }
 
 .sec-passos .numPas {
@@ -119,6 +125,33 @@ section {
     display: none;
 }
 
+@keyframes pulsededo {
+    0% {
+        transform: scale(1) rotate(332deg);
+   
+    }
+
+    50% {
+        transform: scale(1.1) rotate(332deg);
+       
+    }
+
+    100% {
+        transform: scale(1) rotate(332deg);
+  
+    }
+}
+
+.sec-passos .fa-hand-pointer {
+    display: none;
+    position: absolute;
+    font-size: 40px;
+    transform: rotate(332deg);
+    margin: 13px -10px;
+    color: var(--base1);
+    animation: pulsededo 700ms infinite;
+}
+
 @media (min-width: 768px) {
     .sec-passos {
         padding: 15px 129px;
@@ -159,22 +192,22 @@ section {
         font-size: 30px;
     }
 
+    .sec-passos .fa-hand-pointer {
+        font-size: 66px;
+    }
+
 }
 
 @media (min-width: 1024px) {
     .sec-passos .bar {
         width: 200px;
     }
+    .sec-passos .fa-hand-pointer {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) and (max-height: 800px) {
-
-    .sec-passos{
-        background-image: url('./../imgs/At3.svg');
-        background-size: cover;  
-
-    }
-
     .sec-passos .title h2 {
         font-size: 30px;
         margin: 50px 0px;
@@ -211,6 +244,7 @@ section {
         margin: 15px 15px;
         z-index: 1;
         background-color: var(--base4);
+        width: 225px;
     }
 
     .sec-passos .text-title {
@@ -228,7 +262,8 @@ section {
         color: var(--base1);
     }
 
-    .sec-passos .step, .sec-passos .numPas {
+    .sec-passos .step,
+    .sec-passos .numPas {
         border-color: var(--base1);
     }
 
@@ -239,14 +274,15 @@ section {
         justify-content: center;
     }
 
-    .sec-passos .step{
+    .sec-passos .step {
         transform: none;
         cursor: pointer;
         background-color: var(--base4);
         z-index: 1;
     }
 
-    .sec-passos .step, .sec-passos .numPas {
+    .sec-passos .step,
+    .sec-passos .numPas {
         padding: 14px;
         background-color: var(--base4);
         display: flex;
@@ -255,7 +291,8 @@ section {
         align-items: center;
     }
 
-    .lin, .lin-3 {
+    .lin,
+    .lin-3 {
         width: 10px;
         background-color: var(--base1);
         height: 52px;
@@ -274,10 +311,45 @@ section {
         width: 208px;
     }
 
-    .sec-passos .bar-3{
+    .sec-passos .bar-3 {
+        width: 0px;
+    }
+}
+
+
+@media (min-width: 1358px) {
+    .step i {
+        font-size: 23px;
+    }
+
+    .sec-passos .step,
+    .sec-passos .numPas {
+        padding: 9px;
+    }
+
+    .sec-passos .bar {
+        width: 219px;
+    }
+
+    .bar-3 {
         width: 0px;
     }
 
-   
+    .sec-passos .numPas {
+        padding: 0px 9px;
+    }
 
+    .sec-passos .text-title {
+        font-size: 18px;
+    }
+
+    .sec-passos .text-descri {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--colorNone);
+    }
+
+    .sec-passos .btn_white {
+        font-size: 16px;
+    }
 }

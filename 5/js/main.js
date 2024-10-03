@@ -126,16 +126,26 @@ $(document).ready(function () {
     });
 });
 
+let dedoview = false;
 $(window).on('scroll', function (event) {
     var scroll = $(window).scrollTop();
     if (scroll < 300) {
         gsap.to(".fa-circle-chevron-left", {
             y: 100,
-        })
+        });
+        if(!dedoview){
+            setTimeout(() => {
+                gsap.to(".fa-hand-pointer", {
+                    display: 'inline'
+                });
+                dedoview = true;
+            }, 3000);
+        }
+        
     } else {
         gsap.to(".fa-circle-chevron-left", {
             y: -20,
-        })
+        });
     }
 });
 
