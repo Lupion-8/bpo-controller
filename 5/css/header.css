@@ -215,7 +215,7 @@ header form input {
     color: var(--textsWhite);
 }
 
-header form input[type="button"] {
+header form input[type="submit"] {
     background-color: var(--base6);
     color: var(--textsWhite);
     border-style: none;
@@ -228,7 +228,7 @@ header form input[type="button"] {
     font-weight: 600;
 }
 
-header form input[type="button"]:hover {
+header form input[type="submit"]:hover {
     background-color: #969594;
     transition: 200ms;
 }
@@ -898,7 +898,7 @@ header form p b {
         padding-left: 0px;
     }
 
-    header form input[type="button"] {
+    header form input[type="submit"] {
         margin-top: 40px;
     }
 
