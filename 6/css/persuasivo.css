@@ -45,7 +45,7 @@ section {
 }
 
 .sec-persuasivo .text2-pers span {
-    color: red;
+    color: #009f04;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -134,7 +134,12 @@ section {
         flex-direction: column;
     }
 
-
+    .sec-persuasivo .text1-pers {
+        margin: 0px 0px;
+        text-align: left;
+        width: 410px;
+        height: 98px;
+    }
 
 
     .sec-persuasivo .frame-2 {
@@ -147,12 +152,13 @@ section {
         color: var(--colorNone);
     }
 
-    .pers-ajust-1, .pers-ajust-2 {
+    .pers-ajust-1,
+    .pers-ajust-2 {
         display: flex;
-        justify-content: space-between;
-
-        flex-direction: column;
+        flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .pers-ajust-2 {
@@ -168,7 +174,9 @@ section {
         font-size: 25px;
     }
 
- 
+    .sec-persuasivo .text2-pers {
+        text-align: left;
+    }
 
     .sec-persuasivo .text2-pers p {
         margin: 10px 0px;
@@ -179,7 +187,9 @@ section {
 }
 
 @media (min-width: 1358px) {
-    
+    .pers-ajust-1, .pers-ajust-2 {
+        width: 80%;
+    }
 
     .sec-persuasivo .frame-2 {
         width: 260px;
@@ -188,7 +198,11 @@ section {
     .text1-pers span {
         font-size: 18px;
     }
-
+    .sec-persuasivo .text1-pers {
+   
+        width: 580px;
+        height: 40px;
+    }
     .sec-persuasivo .text2-pers span {
         font-size: 20px;
     }
@@ -197,14 +211,16 @@ section {
         font-size: 18px;
     }
 
-    .text2-pers p.ganbiarra-1 {
-        margin-bottom: 45px;
+    .pers-ajust-2 {
+        margin: 0px 0px;
     }
-
 
     .sec-persuasivo .btn_white {
         font-size: 16px;
     }
     
-   
+    .sec-persuasivo .text2-pers {
+        text-align: left;
+        width: 610px;
+    }
 }

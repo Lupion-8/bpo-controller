@@ -1,0 +1,62 @@
+.wapp {
+    position: fixed;
+    right: 13px;
+    bottom: 70px;
+    width: 15vw;
+    height: 15vw;
+    background-image: url(https://controllerconsultores.com.br/assets/imgs/wpp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    display: inline;
+    z-index: 1000;
+    cursor: pointer;
+    transform: translateX(100px);
+}
+
+@media (min-width: 540px) {
+    .wapp {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wapp {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wapp {
+        width: 60px;
+        height: 60px;
+        right: 6px;
+        bottom: 70px;
+    }
+}
+
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+    .wapp {
+    
+
+        width: 90px;
+        height: 90px;
+        right: 6px;
+        bottom: 100px;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .wapp {
+        width: 4vw;
+        height: 4vw;
+    }
+}

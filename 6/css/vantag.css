@@ -128,7 +128,6 @@ section {
         flex-direction: row;
         justify-content: center;
         margin: 20px 0px;
-        flex-wrap: wrap;
     }
 
     .sec-vantag .vanteg-card {
@@ -169,10 +168,9 @@ section {
     .sec-vantag .vanteg-card p {
         font-size: 15px;
     }
-    
     .sec-vantag .vanteg-card {
         width: 275px;
-        height: 216px;
+        height: 195px;
     }
 
 }

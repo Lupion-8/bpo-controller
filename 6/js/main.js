@@ -275,7 +275,7 @@ function ajustBtns() {
             document.querySelector('.lay_form').style.display = 'none'; // Exibe o formulário
         }else{
             btn.parentElement.href = 'header';
-            //document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário  
+            document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário  
         } 
     });
 }

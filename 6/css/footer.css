@@ -1,0 +1,98 @@
+footer {
+    padding: 15vw 0vw 0vw;
+    background-image: url(https://controllerconsultores.com.br/assets/imgs/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: var(--textsWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer ._cont {
+    margin: 7vw 5vw 9vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+footer ._cont-info {
+    font-size: 7vw;
+    font-weight: 600;
+}
+
+footer ._cont-cidade {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
+    color: white;
+}
+
+footer ._cont-endere,
+footer ._cont-email,
+footer ._cont-tele,
+footer ._cont-hora {
+    font-size: 3.5vw;
+    margin: 1vw 0vw;
+}
+
+footer ._cont-icon-size {
+    margin-right: 1vw;
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+footer .iconRedes {
+    color: white;
+    font-size: 7vw;
+    margin: 1vw;
+}
+
+footer .dev {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    font-size: 3vw;
+}
+
+@media (min-width: 712px) {
+    footer  ._cont-info {
+        font-size: 30px;
+    }
+
+    footer ._cont-cidade {
+        font-size: 20px;
+    }
+
+    footer ._cont-endere,
+    footer ._cont-email,
+    footer ._cont-tele,
+    footer ._cont-hora {
+        font-size: 15px;
+        margin: 5px 0px;
+    }
+
+    footer ._cont-icon-size {
+        font-size: 22px;
+    }
+
+    footer .iconRedes {
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    footer .dev {
+        border-top: 1px solid rgba(255, 255, 255, .3);
+        font-size: 14px;
+        margin: 2px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer ._cont {
+        margin: 0vw 5vw 2vw;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+}
