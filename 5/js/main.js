@@ -260,6 +260,7 @@ function debounce(fn, ms) {
     };
 }
 
+
 function ajustBtns() {
     const btns = document.querySelectorAll('.btn_white');
     const formDesktop = document.querySelector('.passos-abrir-empresa-desktop');
@@ -270,11 +271,11 @@ function ajustBtns() {
         btn.removeEventListener('click', mostrarLogin); // Supondo que você só adicione esse tipo de listener
 
         if (displayValue === "none") {
-            btn.addEventListener('click', mostrarLogin);
-            btn.parentElement.href = '';
-            document.querySelector('.lay_form').style.display = 'none'; // Exibe o formulário
+            //btn.addEventListener('click', mostrarLogin);
+            btn.parentElement.href = 'form';
+            document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário
         }else{
-            btn.parentElement.href = 'footer';
+            btn.parentElement.href = 'form';
             document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário  
         } 
     });

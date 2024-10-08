@@ -29,6 +29,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 54px;
+}
+
+.text2-pers p.ganbiarra-1 {
+    margin-bottom: 45px;
 }
 
 .sec-persuasivo .text1-pers {

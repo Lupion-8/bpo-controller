@@ -24,6 +24,7 @@ section {
     text-align: center;
     text-transform: uppercase;
     color: var(--base1);
+    font-weight: bold;
 }
 
 .sec-passos .passos-abrir-empresa {
@@ -129,17 +130,17 @@ section {
 @keyframes pulsededo {
     0% {
         transform: scale(1) rotate(332deg);
-   
+
     }
 
     50% {
         transform: scale(1.1) rotate(332deg);
-       
+
     }
 
     100% {
         transform: scale(1) rotate(332deg);
-  
+
     }
 }
 
@@ -203,6 +204,7 @@ section {
     .sec-passos .bar {
         width: 200px;
     }
+
     .sec-passos .fa-hand-pointer {
         display: none;
     }

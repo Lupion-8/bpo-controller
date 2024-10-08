@@ -191,6 +191,32 @@ section {
     .accordion-item {
         width: 100%;
     }
+
+    .sec-duvida .lay_form {
+        display: none;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+        right: 0;
+        margin-top: 40px;
+        box-shadow: #00000061 0px 0px 10px 1px;
+        background: var(--base4);
+        color: var(--base1);
+        border-radius: 1vw;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .sec-duvida form {
+        gap: 3vw;
+        padding: 7vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1170px) {
+    .sec-duvida .lay_form {
+        right: 171px;
+    }
 }
 
 
