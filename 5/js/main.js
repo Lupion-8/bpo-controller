@@ -185,6 +185,8 @@ window.addEventListener('scroll', checkSection);
 });*/
 
 
+
+
 document.querySelector('.sec-duvida form input[type="submit"] ').addEventListener('click', (event) => {
     event.preventDefault();  // Impede o envio do formulário
     const n = document.querySelector('.name').value

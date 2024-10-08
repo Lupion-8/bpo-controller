@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/nav.css?v=01" />
     <link rel="stylesheet" type="text/css" href="./css/wpp.css?v=01" />
 
-    
+<script src="http://localhost:3391/controller/async-integration?formId=86211580517&page=Abertura de Empresa&code=eci-46"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -31,47 +31,61 @@
         <div class="centro">
             <div class="esquerdo">
                 <a href="./">
-                    <img class="logo" src="./imgs/logo-phone.png?v=01"
+                    <img class="logo" src="./imgs/logo-phone.png"
                         srcset="./imgs/logo-desktop.png 1000w, ./imgs/logo-phone.png 700w"
                         sizes="(max-width: 900px) 700px, 1000px" alt="Controller - Contadores e Auditores Associados">
                 </a>
 
-                <h1>Abertura de empresa <span id="animated-text">em até 72 horas</span></h1>
+                <h1><span id="animated-text">Sua empresa aberta</span> em até 72 horas</h1>
 
                 <h2>Conquiste o sucesso empresarial. Conte com nossa contabilidade especializada em abertura de sua
                     empresa!</h2>
-
-                    <div class="lay_form">
-                        <form class="form01" method="POST">
-                            <div class="name-email-layer">
-                                <div>
-                                    <input class="name" type="text" placeholder="Seu nome" required />
-                                </div>
-                
-                                <div>
-                                    <input class="telefone" type="tel" placeholder="Seu telefone" required />
-                                </div>
-                            </div>
-            
-                            <div class="lay-email">
-                                <input class="email" type="email" placeholder="Seu e-mail" required />
-                            </div>
-            
-                            <input type="submit" value="Quero abrir minha empresa" />
-                        </form>
-                    </div>
-
+                <h3>Contribuir para o crescimento dos negócios de nossos clientes, maximizando os seus resultados com
+                    serviços de alta qualidade.</h3>
             </div>
 
             <div class="direito">
-                <img class="frame1" src="./imgs/frame-1.png?v=01" alt="Abertura de empresa" />
+                <img class="frame1" src="./imgs/frame-1.png" />
             </div>
         </div>
+
+        <div class="lay_btn">
+            <a class="page-scroll" href="">
+                <button class="btn_white">Fale com um especialista</button>
+            </a>
+        </div>
+
+
+        <div id="overlay"></div>
+    
+        
+        <div class="lay_form">
+            <form class="form01" method="POST">
+                <p><b>Abra sua empresa hoje!</b><br>Contate-nos e cresça!</p>
+                <div>
+                    <i class="fas fa-user-circle" style="color: #ffffff;"></i>
+                    <input type="text" placeholder="Seu nome" />
+                </div>
+
+                <div>
+                    <i class="fas fa-envelope" style="color: #ffffff;"></i>
+                    <input type="email" placeholder="Seu e-mail" />
+                </div>
+
+                <div>
+                    <i class="fas fa-mobile-alt" style="color: #ffffff;"></i>
+                    <input type="tel" placeholder="Seu telefone" />
+                </div>
+
+                <input type="submit" value="Enviar" />
+            </form>
+        </div>
+        
     </header>
 
     <section class="sec-passos white-section">
         <div class="title">
-            <h2>Abertura de empresa em 3 passos!</h2>
+            <h2>Sua empresa aberta em 3 passos!</h2>
         </div>
 
         <div class="passos-abrir-empresa">
@@ -79,7 +93,7 @@
                 <span class="step step-1"><i class="fas fa-comments"></i></span>
                 <span class="bar bar-1"></span>
                 <span class="step step-2"><i class="fas fa-file-pdf"></i><i class="fa-solid fa-hand-pointer"></i></span>
-
+                
                 <span class="bar bar-2"></span>
                 <span class="step step-3"><i class="fas fa-building"></i></span>
             </div>
@@ -113,21 +127,24 @@
                 <div class="pas">
 
                     <span class="numPas">1</span>
-                    <span class="text-title">Reunião de alinhamento com nossos especialistas</span>
-                    <p class="text-descri">Atendimento personalizado, para a abertura de sua empresa, para entendermos melhor sobre seu projeto e oferecermos a melhor solução.</p>
+                    <span class="text-title">Reunião de alinhamento</span>
+                    <p class="text-descri">Atendimento personalizado, para entendermos melhor sobre seu projeto e
+                        oferecermos a melhor solução.</p>
                 </div>
 
 
                 <div class="pas">
                     <span class="numPas">2</span>
-                    <span class="text-title">Envio de documentação</span>
-                    <p class="text-descri">Recebimento de toda documentação de forma digital. Você não precisa sair do conforto de sua casa para abertura de sua empresa.</p>
+                    <span class="text-title">Reunião de alinhamento</span>
+                    <p class="text-descri">Atendimento personalizado, para entendermos melhor sobre seu projeto e
+                        oferecermos a melhor solução.</p>
                 </div>
 
                 <div class="pas">
                     <span class="numPas">3</span>
-                    <span class="text-title">Sonho realizado!</span>
-                    <p class="text-descri">Finalmente conseguiremos realizar a abertura do seu CNPJ, e a sua empresa estará pronta para operar. Nossa equipe vai lhe acolher e fazer todo o monitoramento durante a sua jornada empreendedora.</p>
+                    <span class="text-title">Reunião de alinhamento</span>
+                    <p class="text-descri">Atendimento personalizado, para entendermos melhor sobre seu projeto e
+                        oferecermos a melhor solução.</p>
                 </div>
             </div>
 
@@ -182,13 +199,13 @@
                         break;
                     case 3:
                         setdata(3, 'Sonho realizado!', 'Oba! Seu CNPJ saiu e sua empresa já tá pronta pra te receber e te acompanhar nessa jornada.');
-
+                      
                         break;
                 }
 
                 // Atualizar a variável currentStep
                 currentStep = stepNum;
-
+               
             }
 
             function setdata(n, t, tx) {
@@ -246,25 +263,31 @@
 
     <section class="sec-persuasivo white-section">
         <div class="title">
-            <h2>Abertura de empresa nunca foi tão fácil</h2>
+            <h2>Abrir sua empresa nunca foi tão fácil e rápido!</h2>
         </div>
 
         <div class="lay-pers">
 
             <div class="pers-ajust-1">
                 <div class="text1-pers">
-                    <span>Na Controller, você não precisa se preocupar com burocracias.<br> Nossa equipe cuida de toda a
-                        documentação para você, de forma ágil e eficiente.<br> Em pouco tempo, sua empresa estará pronta
+                    <span>Na Controller, você não precisa se preocupar com burocracias. Nossa equipe cuida de toda a
+                        documentação para você, de forma ágil e eficiente. Em pouco tempo, sua empresa estará pronta
                         para
-                        funcionar!</span>
+                        começar!</span>
                 </div>
 
+                <div class="pers-img1">
+                    <img class="frame-2" src="./imgs/frame3-phone.png"
+                        srcset="./imgs/frame3-phone.png 1000w, ./imgs/freme3-phone.png 700w"
+                        sizes="(max-width: 900px) 700px, 1000px"
+                        alt="Empresa | Controller Contadores e Auditores Associados">
+                </div>
             </div>
 
             <div class="pers-ajust-2">
                 <div class="text2-pers">
                     <span>Contrato sem cláusula de fidelidade</span>
-                    <p class="ganbiarra-1">Aqui, nós confiamos tanto na qualidade de nossos serviços que nossos contratos não possuem
+                    <p>Aqui, nós confiamos tanto na qualidade de nossos serviços que nossos contratos não possuem
                         cláusula
                         de
                         fidelidade.</p>
@@ -272,7 +295,12 @@
                     <p>Se em 30 dias você não ficar satisfeito, você não pagará sua mensalidade!</p>
                 </div>
 
-
+                <div class="pers-img1">
+                    <img class="frame-2" src="./imgs/frame4-phone.png"
+                        srcset="./imgs/frame4-phone.png 1000w, ./imgs/freme4-phone.png 700w"
+                        sizes="(max-width: 900px) 700px, 1000px"
+                        alt="Empresa | Controller Contadores e Auditores Associados">
+                </div>
             </div>
 
             <div class="lay_btn">
@@ -284,7 +312,7 @@
 
     <section class="sec-servis blue-section">
         <div class="title">
-            <h2>Transforme sua ideia em realidade.<br> Abrir sua empresa nunca foi tão simples e rápido!</h2>
+            <h2>Pare de se preocupar com as burocracias, nós abrimos sua empresa</h2>
         </div>
 
         <div class="text1-servis">
@@ -313,7 +341,7 @@
                     Expertise comprovada
                 </span>
                 <p>
-                    Beneficie-se de nossa vasta experiência em abertura de empresas. Nossos muitos
+                    Beneficie-se de nossa vasta experiência em contabilidade para empresas iniciantes. Nossos muitos
                     casos de sucesso atestam a qualidade de nosso trabalho!
                 </p>
             </div>
@@ -384,24 +412,6 @@
                 <span>Atendimento diferenciado e humanizado</span>
                 <p>Apesar de sermos uma contabilidade digital, aqui você fala com um humano na hora que quiser.</p>
             </div>
-
-            <div class="vanteg-card">
-                <i class="fas fa-building"></i>
-                <span>Sede virtual</span>
-                <p>Sede virtual é para que seu escritório possa funcionar remotamente. Ao contratar uma sede virtual, você terá um endereço fiscal para registrar o seu CNPJ e comprovar endereço junto a qualquer outro órgão necessário.</p>
-            </div>
-
-            <div class="vanteg-card">
-                <i class="fas fa-file-alt"></i>
-                <span>Revisão tributária</span>
-                <p>Nosso setor de inteligência analisa sua empresa em tempo real, sempre buscando economia na sua carga tributária.</p>
-            </div>
-
-            <div class="vanteg-card">
-                <i class="fas fa-chevron-circle-down"></i>
-                <span>Qualificação constante da equipe</span>
-                <p>Nossa equipe é treinada mensalmente, para se manter atualizada e oferecermos o melhor serviço!</p>
-            </div>
         </div>
     </section>
 
@@ -462,8 +472,8 @@
                                 class="fas farrr fa-chevron-circle-down"></i></div>
                     </div>
                     <div class="accordion-content">
-                        <p>Não se preocupe! Nossa equipe especializada irá guiá-lo em todos os passos, desde a
-                            elaboração de documentos até a obtenção de licenças e alvarás</p>
+                        <p>"Não se preocupe! Nossa equipe especializada irá guiá-lo em todos os passos, desde a
+                            elaboração de documentos até a obtenção de licenças e alvarás"</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -473,8 +483,8 @@
                         <div class="accordion-icon"><i class="fas farrr fa-chevron-circle-down"></i></div>
                     </div>
                     <div class="accordion-content">
-                        <p>Nosso serviço é altamente acessível e projetado para atender às necessidades de novas
-                            empresas. Além disso, ao evitar erros contábeis, você economizará a longo prazo.</p>
+                        <p>"Nosso serviço é altamente acessível e projetado para atender às necessidades de novas
+                            empresas. Além disso, ao evitar erros contábeis, você economizará a longo prazo."</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -483,8 +493,8 @@
                         <div class="accordion-icon"><i class="fas farrr fa-chevron-circle-down"></i></div>
                     </div>
                     <div class="accordion-content">
-                        <p>Embora seja possível, nosso conhecimento especializado pode evitar problemas e garantir
-                            um processo mais rápido e seguro.</p>
+                        <p>"Embora seja possível, nosso conhecimento especializado pode evitar problemas e garantir
+                            um processo mais rápido e seguro."</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -493,9 +503,9 @@
                         <div class="accordion-icon"><i class="fas farrr fa-chevron-circle-down"></i></div>
                     </div>
                     <div class="accordion-content">
-                        <p>Atendemos contabilidade para todos os tipos de negócio. Compreendemos as complexidades e
+                        <p>"Atendemos contabilidade para todos os tipos de negócio. Compreendemos as complexidades e
                             regulamentações contábeis exclusivas de cada setor. Deixe nossa experiência trabalhar a
-                            seu favor e descubra como podemos impulsionar seu sucesso financeiro!</p>
+                            seu favor e descubra como podemos impulsionar seu sucesso financeiro!" </p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -504,10 +514,10 @@
                         <div class="accordion-icon"><i class="fas farrr fa-chevron-circle-down"></i></div>
                     </div>
                     <div class="accordion-content">
-                        <p>Nossa comunicação é flexível e adaptada às suas necessidades. Oferecemos opções de
+                        <p>"Nossa comunicação é flexível e adaptada às suas necessidades. Oferecemos opções de
                             reuniões online e videoconferências para economizar seu tempo valioso. Independentemente
                             de sua localização, estamos sempre prontos para atendê-lo de maneira conveniente e
-                            eficiente!</p>
+                            eficiente!"</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -530,7 +540,8 @@
                     <div class="accordion-content">
                         <p>Sim! Gostamos de sempre estar em contato com nossos clientes e valorizamos muito o
                             atendimento humanizado. Você pode falar conosco via Whatsapp, telefone, reunião online
-                            ou até mesmo presencial. Nossa prioridade é te atender da melhor maneira, sempre com segurança.
+                            ou até mesmo presencial. Se sentindo confortável e seguro, também podemos nos reunir
+                            presencialmente. Nossa prioridade é te atender da melhor maneira, sempre com segurança.
                         </p>
                     </div>
                 </div>
@@ -565,10 +576,7 @@
         <div class="dev">Copyright 2024 – CONTROLLER – CONTADORES E AUDITORES ASSOCIADOS® Todos os direitos
             reservados.
         </div>
-        <a class="page-scroll" href="form">
-            <div class="wapp"></div>
-        </a>
-        
+        <div class="wapp"></div>
         <a class="page-scroll" href="#inicio">
             <i id="icon" class="fa-solid fa-circle-chevron-left"></i>
         </a>

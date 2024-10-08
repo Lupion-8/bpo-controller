@@ -184,20 +184,12 @@ window.addEventListener('scroll', checkSection);
     window.open(`https://api.whatsapp.com/send/?phone=5587981025310&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+cont%C3%A1bil.+&type=phone_number&app_absent=0`);
 });*/
 
-
-
-
-document.querySelector('header form input[type="submit"] ').addEventListener('click', (event) => {
-    event.preventDefault();  // Impede o envio do formulário
-    const n = document.querySelector('.name').value
-    const e = document.querySelector('.email').value
-    if(n.length > 1 && e.length > 5){
-        window.location.assign('/successful');
-    }else{
-        alert('Formulários invalido!');
-    }
-    
-});
+/*const btn = document.querySelectorAll('.btn_white');
+btn.forEach(element => {
+    element.addEventListener('click', () => {
+        window.open(`https://api.whatsapp.com/send/?phone=5587981025310&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+cont%C3%A1bil.+&type=phone_number&app_absent=0`);
+    });
+});*/
 
 
 setTimeout(() => {
@@ -242,18 +234,18 @@ setTimeout(() => {
 //alert("Largura da página: " + document.documentElement.clientWidth + "px, Altura da página: " + document.documentElement.clientHeight + "px");
 
 function mostrarLogin() {
-    //document.getElementById('overlay').style.display = 'block'; // Exibe o fundo
+    document.getElementById('overlay').style.display = 'block'; // Exibe o fundo
     document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário
 }
 
 // Função para ocultar o formulário
 function fecharLogin() {
-    //document.getElementById('overlay').style.display = 'none'; // Esconde o fundo
+    document.getElementById('overlay').style.display = 'none'; // Esconde o fundo
     document.querySelector('.lay_form').style.display = 'none'; // Esconde o formulário
 }
 
 // Fecha o formulário ao clicar fora dele (opcional)
-//document.getElementById('overlay').addEventListener('click', fecharLogin);
+document.getElementById('overlay').addEventListener('click', fecharLogin);
 
 
 // Debounce function para limitar chamadas frequentes
@@ -268,7 +260,6 @@ function debounce(fn, ms) {
     };
 }
 
-
 function ajustBtns() {
     const btns = document.querySelectorAll('.btn_white');
     const formDesktop = document.querySelector('.passos-abrir-empresa-desktop');
@@ -279,11 +270,11 @@ function ajustBtns() {
         btn.removeEventListener('click', mostrarLogin); // Supondo que você só adicione esse tipo de listener
 
         if (displayValue === "none") {
-            //btn.addEventListener('click', mostrarLogin);
-            btn.parentElement.href = 'form';
-            document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário
+            btn.addEventListener('click', mostrarLogin);
+            btn.parentElement.href = '';
+            document.querySelector('.lay_form').style.display = 'none'; // Exibe o formulário
         }else{
-            btn.parentElement.href = 'form';
+            btn.parentElement.href = 'header';
             document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário  
         } 
     });
