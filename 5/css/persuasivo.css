@@ -23,6 +23,7 @@ section {
     text-align: center;
     text-transform: uppercase;
     color: var(--base1);
+    font-weight: bold;
 }
 
 .sec-persuasivo .lay-pers {
@@ -209,6 +210,10 @@ section {
 
     .sec-persuasivo .btn_white {
         font-size: 16px;
+    }
+
+    .sec-persuasivo .lay-pers {
+        gap: 0px;
     }
     
    

@@ -23,15 +23,14 @@ section {
     text-align: center;
     text-transform: uppercase;
     color: var(--base1);
+    font-weight: bold;
+    margin: 15px 0px;
 }
 
 .sec-vantag .title h3{
     text-align: center;
 }
 
-.sec-vantag .title h2 {
-    margin: 15px 0px;
-}
 
 .sec-vantag .vanteg-cards {
     display: flex;

@@ -248,7 +248,7 @@ section {
         z-index: 1;
         background-color: var(--base4);
         width: 225px;
-        height: 322px;
+        height: 321px;
     }
 
     .sec-passos .text-title {
@@ -337,6 +337,10 @@ section {
 
     .bar-3 {
         width: 0px;
+    }
+
+    .sec-passos .pas {
+        height: 230px;
     }
 
     .sec-passos .numPas {
