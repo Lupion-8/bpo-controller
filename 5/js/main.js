@@ -184,12 +184,18 @@ window.addEventListener('scroll', checkSection);
     window.open(`https://api.whatsapp.com/send/?phone=5587981025310&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+cont%C3%A1bil.+&type=phone_number&app_absent=0`);
 });*/
 
-/*const btn = document.querySelectorAll('.btn_white');
-btn.forEach(element => {
-    element.addEventListener('click', () => {
-        window.open(`https://api.whatsapp.com/send/?phone=5587981025310&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+cont%C3%A1bil.+&type=phone_number&app_absent=0`);
-    });
-});*/
+
+document.querySelector('.sec-duvida form input[type="submit"] ').addEventListener('click', (event) => {
+    event.preventDefault();  // Impede o envio do formulário
+    const n = document.querySelector('.name').value
+    const e = document.querySelector('.email').value
+    if(n.length > 1 && e.length > 5){
+        window.location.assign('/successful');
+    }else{
+        alert('Formulários invalido!');
+    }
+    
+});
 
 
 setTimeout(() => {
