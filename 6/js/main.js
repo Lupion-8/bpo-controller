@@ -133,7 +133,7 @@ $(window).on('scroll', function (event) {
         gsap.to(".fa-circle-chevron-left", {
             y: 100,
         });
-        if(!dedoview){
+        if (!dedoview) {
             setTimeout(() => {
                 gsap.to(".fa-hand-pointer", {
                     display: 'inline'
@@ -141,7 +141,7 @@ $(window).on('scroll', function (event) {
                 dedoview = true;
             }, 3000);
         }
-        
+
     } else {
         gsap.to(".fa-circle-chevron-left", {
             y: -20,
@@ -191,12 +191,12 @@ document.querySelector('header form input[type="submit"] ').addEventListener('cl
     event.preventDefault();  // Impede o envio do formulário
     const n = document.querySelector('.name').value
     const e = document.querySelector('.email').value
-    if(n.length > 1 && e.length > 5){
+    if (n.length > 1 && e.length > 5) {
         window.location.assign('/successful');
-    }else{
+    } else {
         alert('Formulários invalido!');
     }
-    
+
 });
 
 
@@ -282,10 +282,10 @@ function ajustBtns() {
             //btn.addEventListener('click', mostrarLogin);
             btn.parentElement.href = 'form';
             document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário
-        }else{
+        } else {
             btn.parentElement.href = 'form';
             document.querySelector('.lay_form').style.display = 'flex'; // Exibe o formulário  
-        } 
+        }
     });
 }
 
@@ -305,24 +305,48 @@ ajustBtns(); // Chamada inicial para configurar os eventos corretamente ao carre
 const carouselItems = document.querySelector(".carousel-items")
     , prevButton = document.querySelector(".carousel-prev")
     , nextButton = document.querySelector(".carousel-next");
-    let currentIndex = 0;
+let currentIndex = 0;
 
-    prevButton.addEventListener("click", (()=>{
-        currentIndex > 0 && (currentIndex--,
+prevButton.addEventListener("click", (() => {
+    currentIndex > 0 && (currentIndex--,
         carouselItems.style.transform = `translateX(-${100 * currentIndex / 1.5}%)`)
-    }
-    ));
+}
+));
 
-    nextButton.addEventListener("click", (()=>{
-        currentIndex < 3 && (currentIndex++,
+nextButton.addEventListener("click", (() => {
+    currentIndex < 3 && (currentIndex++,
         carouselItems.style.transform = `translateX(-${100 * currentIndex / 1.5}%)`)
-    }
-    ));   
+}
+));
 
 
-    for (var e = document.getElementsByClassName("accordion-item"), t = 0; t < e.length; t++)
-        e[t].querySelector(".accordion-header").addEventListener("click", n);
-    function n(e) {
-        this.parentNode.classList.toggle("expanded"),
+for (var e = document.getElementsByClassName("accordion-item"), t = 0; t < e.length; t++)
+    e[t].querySelector(".accordion-header").addEventListener("click", n);
+function n(e) {
+    this.parentNode.classList.toggle("expanded"),
         "rotate(180deg)" == this.parentNode.querySelector(".accordion-icon").style.webkitTransform ? this.parentNode.querySelector(".accordion-icon").style.transform = "rotate(0deg)" : this.parentNode.querySelector(".accordion-icon").style.transform = "rotate(180deg)"
-    }
+}
+
+
+
+const cardServ1 = document.querySelectorAll('.csv1');
+const cardServ2 = document.querySelectorAll('.csv2');
+
+document.querySelector('.cd1').addEventListener('mouseenter', () => {
+    cardServ1.forEach(element => {
+        element.classList.add('card-serv-open');
+    });
+    cardServ2.forEach(element =>{
+        element.classList.remove('card-serv-open');
+    });
+});
+
+
+document.querySelector('.cd2').addEventListener('mouseenter', () => {
+    cardServ2.forEach(element => {
+        element.classList.add('card-serv-open');
+    });
+    cardServ1.forEach(element =>{
+        element.classList.remove('card-serv-open');
+    });
+});
