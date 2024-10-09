@@ -9,154 +9,93 @@
     --colorNone: #5c5c5c;
 }
 
-section {
-    padding: 15px;
+/* Estilos padrão (aplicados em todos os dispositivos) */
+body {
+    font-size: 16px;
+    background-color: #f0f0f0;
+    /* Outros estilos globais */
 }
 
-.sec-servis {
-    background: linear-gradient(254deg, var(--base1), var(--base5))
-}
 
-.sec-servis .title h2 {
-    font-size: 21px;
+.sec-servis h2 {
     text-align: center;
     text-transform: uppercase;
-    color: var(--textsWhite);
-}
-
-
-
-.sec-servis .text1-servis {
-    color: var(--textsWhite);
-}
-
-.sec-servis .card-serv {
-    padding: 10px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
-    border-color: var(--base4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 25px 0px;
-}
-
-.sec-servis .card-serv span {
-    font-size: 22px;
+    color: var(--base1);
     font-weight: bold;
-    color: var(--base7);
+
 }
 
-.sec-servis .card-serv p {
-    margin: 10px 0px;
-}
-
-.sec-servis .lay_btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-}
-
-.sec-servis .btn_white {
-    transition: 500ms;
-    background-color: var(--base4);
-    outline: none;
-    border: none;
-    border-radius: 7px;
-    padding: 10px;
-    animation: pulseButton 2s infinite;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 10px 0px 30px 0px;
-}
-
-@media (min-width: 768px) {
-    .sec-servis {
-        padding: 15px 129px;
-    }
-
-    .sec-servis .title h2 {
-        font-size: 25px;
-    }
-
-    .sec-servis .card-serv span {
-        font-size: 25px;
-    }
-
-    .sec-servis .card-serv p {
-        font-size: 22px;
-    }
-
-    .sec-servis .card-serv {
-        padding: 24px;
-    }
-
-    .sec-servis .btn_white {
-        font-size: 23px;
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        /* Outros ajustes para telas pequenas */
     }
 }
 
+/* Para tablets e dispositivos de tamanho médio */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+        /* Outros ajustes para dispositivos médios */
+    }
 
-@media (min-width: 1024px) and (max-height: 800px) {
-    .sec-servis .title h2 {
+    .sec-servis h2 {
         font-size: 30px;
-        margin: 25px 0px;
-    }
-
-    .sec-servis {
-        padding: 15px 100px;
-
-    }
-
-    .sec-servis .text1-servis {
-        color: var(--textsWhite);
-        display: flex;
-        overflow: hidden;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .sec-servis .card-serv {
-        height: 182px;
-        padding: 15px;
-        width: 300px;
-        margin: 16px;
-    }
-
-    .sec-servis .card-serv span {
-        font-size: 22px;
-    }
-
-    .sec-servis .card-serv p {
-        font-size: 18px;
-    }
-
-    .sec-servis .btn_white {
-
-        margin: 30px 0px 30px 0px;
     }
 }
 
-@media (min-width: 1358px) {
-    .sec-servis .card-serv span {
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    .sec-servis h2 {
+        font-size: 30px;
+    }
+
+    .card-01, .card-02 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 45px;
+        background-color:  blueviolet;
+        width: 100%;
+    }
+
+    i.fas.fa-helicopter {
+        font-size: 60px;
+    }
+
+    .car-texts {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .card-serv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        margin: 1% 5%;
+        box-shadow: #0000007a 0px 20px 20px 0px;
+    }
+
+}
+
+/* Para telas muito grandes (monitores ultrawide, 4K, etc.) */
+@media (min-width: 1440px) {
+    body {
         font-size: 18px;
-    }
-
-    .sec-servis .card-serv p {
-        font-size: 16px;
-    }
-
-    .sec-servis .card-serv {
-        height: 138px;
-    }
-
-    .sec-servis .btn_white {
-        font-size: 16px;
+        /* Outros ajustes para telas muito grandes */
     }
 }
