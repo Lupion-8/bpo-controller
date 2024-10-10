@@ -1,0 +1,485 @@
+/*----------------GLOBAL---------*/
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --base8: #007b78;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--base8);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--base1);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: inset 0 0 430px #00e1db33, 0 0 260px #00e1db33, 0 0 100px #00e1db33, 0 0 30px #00e1db33, 0 0 15px #00e1db33;
+    }
+
+    50% {
+        box-shadow: inset 0 0 430px #00e1db59, 0 0 300px #00e1db59, 0 0 150px #00e1db59, 0 0 50px #00e1db59, 0 0 25px #00e1db59;
+    }
+
+    100% {
+        box-shadow: inset 0 0 430px #00e1db33, 0 0 260px #00e1db33, 0 0 100px #00e1db33, 0 0 30px #00e1db33, 0 0 15px #00e1db33;
+    }
+}
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes title {
+
+    0% {
+        background: var(--textsWhite);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+    }
+
+    100% {
+        background: linear-gradient(to right, #00e1db, var(--base8));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-40%);
+        animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, .2, 1);
+    }
+}
+
+
+
+:root {
+    --base1: #04062c;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #5c5c5c;
+}
+
+/*HEADER*/
+header {
+    background: linear-gradient(360deg, var(--base1), var(--base5));
+    overflow: hidden;
+}
+
+section {
+    background-color: var(--base1);
+    color: var(--textsWhite);
+    padding: 5% 10%;
+    overflow: hidden;
+}
+
+/* Estilos padrão (aplicados em todos os dispositivos) */
+body {
+    font-size: 16px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* Outros estilos globais */
+}
+
+/*HEADER*/
+.particles {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+}
+
+
+/*HEADER*/
+canvas.particles-js-canvas-el {
+    position: absolute;
+    z-index: 0;
+}
+
+
+/*HEADER*/
+h1,
+h1 span {
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*HEADER*/
+.h1-color,
+.h3-color {
+    animation: title 3s forwards;
+    animation-delay: 2s;
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+h3 {
+    color: var(--base4);
+}
+
+/*HEADER*/
+.frame-1 {
+    background-image: url('./frame-1.png');
+    background-size: cover;
+}
+
+
+
+/*HEADER*/
+.logo {
+    background-image: url('./logo-phone.png');
+    background-size: cover;
+}
+
+
+/*HEADER*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/*HEADER*/
+.tiles-principais {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+/*HEADER*/
+input {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+}
+
+
+/*HEADER*/
+input[type="submit"] {
+    color: var(--base8);
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: var(--base1);
+    font-weight: bold;
+}
+
+
+/*HEADER*/
+input[type="submit"]:hover {
+    background-color: var(--base8);
+    color: var(--textsWhite);
+    transition: 500ms;
+}
+
+
+/*HEADER*/
+.form-name-tel {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/*HEADER*/
+.email-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*HEADER*/
+/*efeito pulse*/
+.imgHeader {
+    position: relative;
+    z-index: 1;
+}
+
+
+/*HEADER*/
+.imgHeader:after {
+    content: "";
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    background: transparent;
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    z-index: -1;
+    transform: translate(-50%, -60%);
+    animation: pulse 2s infinite;
+}
+
+/*==============fim do header global====================*/
+
+.frame-2 {
+    background-image: url('./frame-2.png');
+    background-size: cover;
+}
+
+/*================Fim do blobal=========================*/
+
+
+
+
+
+
+
+
+
+
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        /* Outros ajustes para telas pequenas */
+    }
+}
+
+/* Para tablets e dispositivos de tamanho médio */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+        /* Outros ajustes para dispositivos médios */
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+        max-width: 1366px;
+        width: 100%;
+    }
+
+    /*---------HEADER--------*/
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: var(--textsWhite);
+    }
+
+    .centro {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+
+    .logo {
+        width: 230px;
+        height: 126px;
+    }
+
+    h1,
+    .h1-color {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    .imgHeader:after {
+        width: 222px;
+        height: 300px;
+    }
+
+    .frame-1 {
+        width: 540px;
+        height: 540px;
+    }
+
+    .esquerda,
+    .direita {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
+        width: 40%;
+    }
+
+    .lay-frame-1,
+    .tiles-principais {
+        padding: 1px 80px;
+        margin: 75px 0px;
+    }
+
+    /**======FIM HEADER===========*/
+
+
+
+
+
+    .lay-sec01 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h3,
+    .h3-color {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .l1 {
+        width: 60%;
+    }
+
+    .l2 {
+        width: 40%;
+    }
+
+    .passos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pas {
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        text-align: left;
+        width: 86%;
+        margin: 1%;
+        border-radius: 5px;
+        box-shadow: var(--base8) 1px 1px;
+        background-color: var(--base8);
+        align-items: center;
+        gap: 5px;
+    }
+
+
+    .pas .fas {
+        font-size: 1.6rem;
+    }
+
+    .pas-title {
+        font-size: 1.2rem;
+        color: var(--base1);
+        font-weight: bold;
+    }
+
+    .frame-2 {
+        width: 420px;
+        height: 605px;
+    }
+
+    .lay_btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+    .btn_white {
+        transition: 500ms;
+        background-color: var(--base4);
+        color: var(--base1);
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        padding: 10px;
+        animation: pulseButton 2s infinite;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 10px 0px 30px 0px;
+    
+    }
+    /*=============fim da section 1================*/
+
+
+
+    .lay-sec02 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .lay-sec02 h3{
+        text-align: right;
+    }
+    
+}
+
+
+
+
+/* Para telas muito grandes (monitores ultrawide, 4K, etc.) */
+@media (min-width: 1440px) {
+    body {
+        font-size: 18px;
+        /* Outros ajustes para telas muito grandes */
+    }
+}
