@@ -1,7 +1,7 @@
 document.getElementById("particles-1") && particlesJS("particles-1", {
     particles: {
         number: {
-            value: 40,
+            value: 20,
             density: {
                 enable: !0,
                 value_area: 4e3
