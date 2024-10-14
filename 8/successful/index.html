@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Agradecimento - Controller</title>
+    <link rel="stylesheet" type="text/css" href="./style.css?v=01" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Cabeçalho com logo -->
+    <div class="container">
+        <div class="logo">
+            <img src="./../imgs/logo-phone.png" srcset="./../imgs/logo-desktop.png 1000w, ./../imgs/logo-phone.png 700w"
+                sizes="(max-width: 900px) 700px, 1000px" alt="Controller - Contadores e Auditores Associados">
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <h1>Obrigado por entrar em contato!</h1>
+        <p>Nossa equipe recebeu sua solicitação e em breve entraremos em contato para ajudar no crescimento da sua
+            empresa!</p>
+
+        <p>Enquanto isso, confira alguns de nossos artigos e dicas sobre terceirização financeira e como otimizar as
+            finanças da sua empresa.</p>
+
+        <h2>Siga nossas redes sociais</h2>
+
+        <div class="sos">
+            <a href="https://www.facebook.com/controllercontadores" aria-label="Nossa pagina do facebook"
+                target="_blank"><i class="fab fa-facebook-f iconRedes"></i></a><a
+                href="https://twitter.com/Controllerofc iconRedes" aria-label="Nossa pagina do twitter"
+                target="_blank"><i class="fab fa-twitter iconRedes"></i></a><a
+                href="https://www.instagram.com/controlleroficial/" aria-label="Nossa pagina do instagram"
+                target="_blank"><i class="fab fa-instagram iconRedes"></i></a><a
+                href="https://www.linkedin.com/in/controller-contadores-associados-514781152/?original_referer="
+                aria-label="Nossa pagina do linkedin" target="_blank"><i class="fab fa-linkedin iconRedes"></i></a>
+
+        </div>
+
+        <span class="info_redir"></span>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        &copy; 2024 Controller - Contadores e Auditores Associados. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        const infoRedir = document.querySelector('.info_redir');
+        let cont = 15;
+
+        let timer = setInterval(() => {
+            cont -= 1;  // Simplificação da operação de decremento
+            if (cont <= 0) {
+                clearInterval(timer);  // Correção para interromper o intervalo
+                window.open('https://api.whatsapp.com/send/?phone=5587981025310&text=Olá,+gostaria+de+falar+com+um+especialista+contábil.&type=phone_number&app_absent=0', '_blank');  // Correção do target e simplificação do texto
+                infoRedir.style.display = 'none'
+            } else {
+                infoRedir.textContent = `Você será redirecionado em ${cont} segundos`;  // Correção de gramática no texto
+            }
+        }, 1000);
+
+    </script>
+
+</body>
+
+</html>

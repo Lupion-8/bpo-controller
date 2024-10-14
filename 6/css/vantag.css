@@ -6,7 +6,7 @@
     --base6: #d9d8d5;
     --base7: #fdbe01;
     --textsWhite: #ffffff;
-    --colorNone: #5c5c5c;
+    --colorNone: #4a4a4a;
 }
 
 section {
@@ -14,7 +14,7 @@ section {
 }
 
 .sec-vantag{
-    background-image: url('./../imgs/At3.svg');
+    background-image: url('./../imgs/bg-01.png');
     background-size: cover;
 }
 

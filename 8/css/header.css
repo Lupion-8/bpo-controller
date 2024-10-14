@@ -1,0 +1,449 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #4a4a4a;
+}
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+
+header {
+    background: linear-gradient(356deg, var(--base1), var(--base5));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+header .particles {
+    width: 100%;
+    height: 112%;
+    position: absolute;
+}
+
+header canvas.particles-js-canvas-el {
+    position: absolute;
+    z-index: 0;
+}
+
+header .centro {
+    z-index: 1;
+    display: flex;
+    margin: 5vw auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.esquerdo,
+.direito {
+    padding: 0px 0px 0px 143px;
+    width: 100%;
+}
+
+.esquerdo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 0px;
+}
+
+img.logo {
+    margin-bottom: 22px;
+    width: 20vw;
+}
+
+img.frame1 {
+    width: 52vw;
+    position: relative;
+    right: 13vw;
+    top: 68px;
+}
+
+
+
+h1,
+h1 span {
+    font-size: 3.5vw;
+    width: 37vw;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.6vw;
+    margin-bottom: 18px;
+}
+
+header .lay_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 4px;
+}
+
+header .btn_white {
+    transition: 500ms;
+    background-color: var(--base4);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 0px 30px 0px;
+}
+
+
+/* Fundo escuro */
+header #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+    /* Inicia oculto */
+}
+
+
+header .lay_form {
+    display: none;
+    z-index: 2;
+    right: 303px;
+    color: var(--textsWhite);
+    border-radius: 1vw;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+header form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0vw;
+    padding: 1vw;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header form p {
+    margin-bottom: 0vw;
+}
+
+header form div {
+    display: flex;
+    align-items: flex-end;
+}
+
+header form input {
+    padding: 0.8vw;
+    margin: 5px 6px;
+    background-color: var(--base4);
+    border-style: none;
+    outline: none;
+    color: var(--base1);
+    border-radius: 3px;
+    font-size: 1.5vw;
+}
+
+header .email {
+    width: 100%;
+
+}
+
+header .lay-email {
+    width: 100%;
+    margin: 6px 0px;
+}
+
+header form input[type="submit"] {
+    background-color: var(--base4);
+    color: var(--textsWhite);
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: var(--base1);
+    font-weight: bold;
+    width: 97.5%;
+}
+
+header form input[type="submit"]:hover {
+    background-color: #969594;
+    transition: 200ms;
+}
+
+header form p b {
+    font-size: 22px;
+}
+
+
+
+/*--------------------------------------------------*/
+
+/* Para telas muito grandes (monitores ultrawide, 4K, etc.) */
+@media (min-width: 1440px) {
+    * {
+        font-size: 1vw;
+        /* Outros ajustes para telas muito grandes */
+    }
+
+    img.logo {
+        margin-bottom: 22px;
+        width: 300px;
+    }
+
+    .esquerdo {
+        padding: 0px 12vw;
+    }
+
+    h1,
+    h1 span {
+        font-size: 45px;
+        width: 600px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    header form input {
+        padding: 10px;
+        border-radius: 3px;
+        font-size: 19px;
+    }
+
+    img.frame1 {
+        width: 800px;
+        right: 199px;
+        top: 76px;
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1080px) {
+    body {
+        font-size: 15px;
+        /* Outros ajustes para dispositivos médios */
+    }
+
+    header .centro {
+        margin: 0vw auto;
+    }
+
+    img.frame1 {
+        right: 9vw;
+    }
+
+    h1,
+    h1 span {
+        font-size: 2.9vw;
+    }
+
+    header form input {
+        font-size: 1.1vw;
+    }
+
+
+}
+
+@media (max-width: 1080px) {
+
+    .esquerdo,
+    .direito {
+        padding: 0px 94px 0px 36px;
+        width: 100%;
+    }
+}
+
+/* Para tablets e dispositivos de tamanho médio */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+        /* Outros ajustes para dispositivos médios */
+    }
+}
+
+
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* Outros ajustes para telas pequenas */
+    }
+
+    .esquerdo,
+    .direito {
+        padding: 0px 45px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img.logo {
+        width: 32vw;
+    }
+
+    header .centro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1,
+    h1 span {
+        font-size: 3.9vw;
+        width: 55vw;
+    }
+
+    header h2 {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 2.6vw;
+        margin-bottom: 18px;
+        max-width: 80vw;
+    }
+
+    img.frame1 {
+        width: 450px;
+        right: 0px;
+        top: -135px;
+    }
+
+
+    header form input {
+        font-size: 2.5vw;
+    }
+
+    header .lay_form {
+        right: 0px;
+        top: 395px;
+        position: relative;
+    }
+}
+
+@media (max-width: 550px) {
+    header .particles {
+        height: 132%;
+    }
+
+
+    h1,
+    h1 span {
+        font-size: 35px;
+        width: 440px;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    header form input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    header .particles {
+        width: 100%;
+        height: 126%;
+        position: absolute;
+    }
+
+    header form div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .email {
+        width: auto;
+    }
+
+    img.logo {
+        width: 43vw;
+    }
+
+    h1,
+    h1 span {
+        font-size: 2rem;
+        width: 440px;
+    }
+
+    img.frame1 {
+        width: 351px;
+        top: -206px;
+    }
+
+    header .lay_form {
+        right: 0px;
+        top: 290px;
+    }
+
+    header form input {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 340px) {
+
+    h1,
+    h1 span {
+        font-size: 1.5rem;
+        width: 275px;
+    }
+}
+
+@media (max-width: 340px) {
+    header form input {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,190 @@
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #4a4a4a;
+}
+
+section {
+    padding: 15px;
+}
+
+
+.per-direito,
+.per-esquerdo {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+
+.sec-persuasivo {
+    background-image: url('./../imgs/bg-02.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.sec-persuasivo .lay_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.sec-persuasivo .btn_white {
+    transition: 500ms;
+    background-color: var(--base1);
+    color: var(--textsWhite);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 30px 0px;
+
+}
+
+.ajust-svg {
+    width: 100%;
+    height: 30px;
+    transform: rotate(180deg);
+}
+
+.elementor-shape-fill {
+    fill: #f0f0f0;
+}
+
+/* Para telas muito grandes (monitores ultrawide, 4K, etc.) */
+@media (min-width: 1440px) {
+    body {
+        font-size: 18px;
+        /* Outros ajustes para telas muito grandes */
+    }
+
+    .per-ajust {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 60px;
+    }
+
+    .lay-frame2 {
+        width: 602px;
+        height: 528px;
+    }
+}
+
+
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    .per-ajust {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .per-h2,
+    .per-h2 b {
+        font-size: 55px;
+        color: var(--colorNone);
+    }
+
+    .per-h2 b {
+        color: var(--base1);
+    }
+
+    .lay-frame2 {
+        width: 546px;
+        height: 479px;
+    }
+
+    .frame-2 {
+        background-image: url('../imgs/frame-2-desktop.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lay-pers {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 30px 0px;
+    }
+
+    .text1-pers span,
+    .text2-pers p {
+        color: var(--colorNone);
+    }
+
+
+    .text2-pers span {
+        color: var(--base1);
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .txt2-ajsut-icon {
+        margin: 10px 0px;
+    }
+
+    .fa-circle-check {
+        font-size: 32px;
+    }
+
+}
+
+/* Para telas grandes (desktops) */
+@media (max-width: 1340px) {
+
+    .per-h2, .per-h2 b {
+        font-size: 3.8vw;
+    
+    }
+
+    .lay-frame2 {
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .text1-pers span, .text2-pers p {
+        color: var(--colorNone);
+        font-size: 1.8vw;
+    }
+    .text2-pers span {
+        font-size: 2.1vw;
+    }
+    .fa-circle-check {
+        font-size: 2vw;
+    }
+}
+
+/* Para tablets e dispositivos de tamanho médio */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+        /* Outros ajustes para dispositivos médios */
+    }
+}
+
+
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        /* Outros ajustes para telas pequenas */
+    }
+}
+

@@ -468,7 +468,7 @@ input[type="submit"]:hover {
     /*=============fim da section 1================*/
 
 
-/*---------------------------section-01----------------------------*/
+    /*---------------------------section-01----------------------------*/
     .lay-sec02 {
         display: flex;
         flex-direction: column;
@@ -488,36 +488,44 @@ input[type="submit"]:hover {
     /*====================*/
 
 
+
+    /*-----------------------section 2----------------------*/
     .lay-text {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    .lay-text2{
-        display:flex;
+    .lay-text2 {
+        display: flex;
         justify-content: center;
         text-align: center;
-        
+        margin: 40px 0px 0px 0px;
     }
 
-   .lay-verme{
+    .lay-verme {
         display: flex;
         flex-direction: column;
         text-align: center;
-        
-   }
 
-   .lay-verme span{
-        color:red;
+    }
+
+    .lay-verme span {
+        color: red;
         font-size: 2rem;
         font-weight: bolder;
-   }
+    }
 
-   .lay-verme p{
-    font-size:1.5rem;
-   }
-   
+    .lay-verme p {
+        font-size: 1.5rem;
+    }
+
+    .btn-sec2 {
+        margin-top: 100px;
+    }
+
+    /*=========================================*/
+
 
 
 }

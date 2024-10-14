@@ -18,7 +18,7 @@ html {
     --base6: #d9d8d5;
     --base7: #fdbe01;
     --textsWhite: #ffffff;
-    --colorNone: #5c5c5c;
+    --colorNone: #4a4a4a;
 }
 
 @keyframes pulseButton {
@@ -425,3 +425,24 @@ header form p b {
     }
 }
 
+
+
+/*--------------------------------------------------*/
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        /* Outros ajustes para telas pequenas */
+    }
+}
+
+/* Para tablets e dispositivos de tamanho médio */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+        /* Outros ajustes para dispositivos médios */
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {

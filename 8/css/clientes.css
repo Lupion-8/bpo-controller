@@ -1,0 +1,244 @@
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #4a4a4a;
+}
+section {
+    padding: 15px;
+}
+
+
+.sec-client {
+    background-image: url('./../imgs/bg-02.png');
+    background-size: cover;
+}
+
+
+.sec-client .title h2 {
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--base1);
+}
+
+/*============carro===========*/
+.sec-client .carousel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.sec-client .carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    padding: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 3vw;
+    color: rgb(20 32 106);
+    visibility: hidden;
+}
+
+.sec-client .carousel {
+    width: 100%;
+    overflow-x: scroll;
+    left: 1vw;
+    position: relative;
+}
+
+.sec-client .carousel-items {
+    display: flex;
+    transition: transform .3s ease-in-out;
+    width: 200vw;
+    align-items: center;
+}
+
+.sec-client .carousel-item {
+    flex: 0 0 calc(100% / 3);
+    margin-right: 9vw;
+    margin-left: -2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw;
+    border-radius: 2.5vw;
+}
+
+
+.sec-client .carousel-item img {
+    width: 87vw;
+    height: 112.499vw;
+    border-radius: 2vw;
+    box-shadow: #00000047 0 0 7px;
+}
+
+
+.sec-client .carousel-item {
+    flex: 0 0 calc(100% / 3);
+    margin-right: 9vw;
+    margin-left: -2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw;
+    border-radius: 2.5vw;
+}
+
+/*-------------------------------------*/
+
+.sec-client .client-chamada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.sec-client .client-chamada h2 {
+    font-size: 21px;
+    
+    margin: 15px 0px;
+}
+
+.sec-client .lay_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.sec-client .btn_white {
+    transition: 500ms;
+    background-color: var(--base1);
+    color: var(--textsWhite);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    animation: pulseButton 2s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 30px 0px;
+}
+
+@media (min-width: 768px) {
+    .sec-client {
+        padding: 15px 129px;
+    }
+
+    .sec-client .carousel-item img {
+        width: 360px;
+        height: 460px;
+        border-radius: 12px;
+    }
+
+    .sec-client .title h2 {
+        font-size: 25px;
+    }
+
+    .sec-client .carousel-item {
+        flex: 0 0 calc(70% / 3);
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 30px;
+        border-radius: 25px;
+    }
+
+    .sec-client .client-chamada h2 {
+        font-size: 25px;
+    }
+
+    .sec-client .client-chamada span {
+        font-size: 22px;
+    }
+
+    .sec-client .btn_white {
+        font-size: 23px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .sec-client .carousel-item {
+        flex: 0 0 calc(52% / 3);
+    }
+
+
+    .sec-client .carousel-item img {
+        width: 460px;
+        height: 586px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-height: 800px) {
+
+    
+
+    .sec-client .title h2 {
+        font-size: 30px;
+    }
+
+    .sec-client .carousel-item img {
+        width: 260px;
+        height: 336px;
+    }
+
+    .sec-client .carousel-items {
+        display: flex;
+        transition: transform .3s ease-in-out;
+        width: 645px;
+        align-items: center;
+    }
+
+    .sec-client .carousel-item {
+        flex: 0 0 calc(100% / 3);
+    }
+
+    .sec-client .carousel-prev,
+    .carousel-next {
+        top: 50%;
+        position: relative;
+        padding: 5px;
+        font-size: 43px;
+        cursor: pointer;
+        visibility: visible;
+        right: 0px;
+    }
+
+    .sec-client .carousel-prev {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .sec-client .carousel-next {
+        transform: translateY(-50%) rotate(270deg);
+    }
+
+    .sec-client .carousel {
+        overflow-x: hidden;
+    }
+
+}
+
+@media (min-width: 1358px) {
+    .sec-client .carousel-item {
+        padding: 20px;
+    }
+
+    .sec-client .btn_white {
+        font-size: 16px;
+    }
+}

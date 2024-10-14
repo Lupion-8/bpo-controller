@@ -1,0 +1,163 @@
+:root {
+    --base1: #01044e;
+    --base3: #ed8534;
+    --base4: #ffffff;
+    --base5: #000000;
+    --base6: #d9d8d5;
+    --base7: #fdbe01;
+    --textsWhite: #ffffff;
+    --colorNone: #4a4a4a;
+}
+
+section {
+    padding: 15px;
+}
+
+.sec-duvida .title{
+    text-align: center;
+}
+
+.sec-duvida .title h2 {
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--base1);
+}
+
+.accordion-item.expanded .accordion-content {
+    display: block;
+}
+
+.accordion {
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion-item {
+    border-top: 1px solid #ccc;
+    width: 75%;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.accordion-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d0a64;
+}
+
+.accordion-icon {
+    font-size: 1.2em;
+    color: #888;
+    transition: transform .3s;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.farrr {
+    color: var(--base1);
+}
+
+.accordion-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6A6972;
+    margin: 0;
+    font-family: 'arial';
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .sec-duvida{
+        padding: 15px 129px;
+    }
+   
+    
+    .sec-duvida .title h2 {
+        font-size: 25px;
+        margin: 14px 0px;
+    }
+
+    .sec-duvida .title h3{
+        font-size: 22px;
+    }
+
+    .accordion-title {
+        font-size: 22px;
+    }
+
+    .accordion-content p {
+        font-size: 19px;
+    }
+
+    .farrr {
+        font-size: 22px;
+        margin: 0px 10px;
+    }
+   
+}
+
+@media (max-width: 820px) {
+    .accordion-item {
+        width: 100%;
+    }
+
+    .sec-duvida .lay_form {
+        display: none;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+        right: 0;
+        margin-top: 40px;
+        box-shadow: #00000061 0px 0px 10px 1px;
+        background: var(--base4);
+        color: var(--base1);
+        border-radius: 1vw;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .sec-duvida form {
+        gap: 3vw;
+        padding: 7vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1170px) {
+    .sec-duvida .lay_form {
+        right: 171px;
+    }
+}
+
+
+@media (min-width: 1358px) {
+
+    .accordion-header {
+        width: 810px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
