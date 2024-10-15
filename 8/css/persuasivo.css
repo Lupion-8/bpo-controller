@@ -66,6 +66,52 @@ section {
     fill: #f0f0f0;
 }
 
+.per-ajust {
+    display: flex;
+    flex-direction: row;
+}
+
+.per-h2, .per-h2 b {
+    font-size: 45px;
+    color: var(--colorNone);
+    text-transform: uppercase;
+}
+
+.per-h2 b {
+    color: var(--base1);
+}
+
+.lay-frame2 {
+    width: 546px;
+    height: 479px;
+}
+
+.frame-2 {
+    background-image: url('../imgs/frame-2-desktop.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.lay-pers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0px;
+}
+
+.text1-pers span,
+.text2-pers p {
+    color: var(--colorNone);
+}
+
+
+.text2-pers span {
+    color: var(--base1);
+    font-weight: bold;
+    font-size: 28px;
+}
+
 /* Para telas muito grandes (monitores ultrawide, 4K, etc.) */
 @media (min-width: 1440px) {
     body {
@@ -86,54 +132,39 @@ section {
 }
 
 
+@media (max-width: 1340px) {
 
-/* Para telas grandes (desktops) */
-@media (min-width: 1025px) {
-    .per-ajust {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .per-h2,
-    .per-h2 b {
-        font-size: 55px;
-        color: var(--colorNone);
-    }
-
-    .per-h2 b {
-        color: var(--base1);
+    .per-h2, .per-h2 b {
+        font-size: 3.2vw;
     }
 
     .lay-frame2 {
-        width: 546px;
-        height: 479px;
-    }
-
-    .frame-2 {
-        background-image: url('../imgs/frame-2-desktop.png');
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    .lay-pers {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin: 30px 0px;
+        width: 40vw;
+        height: 35vw;
     }
 
     .text1-pers span,
     .text2-pers p {
         color: var(--colorNone);
+        font-size: 1.8vw;
     }
-
 
     .text2-pers span {
-        color: var(--base1);
-        font-weight: bold;
-        font-size: 28px;
+        font-size: 2.1vw;
     }
+
+    .fa-circle-check {
+        font-size: 2vw;
+    }
+
+    .text2-pers {
+        align-items: flex-start;
+    }
+}
+
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
 
     .txt2-ajsut-icon {
         margin: 10px 0px;
@@ -143,31 +174,25 @@ section {
         font-size: 32px;
     }
 
+    .sec-persuasivo .btn_white {
+        font-size: 22px;
+    }
+
 }
 
-/* Para telas grandes (desktops) */
-@media (max-width: 1340px) {
 
-    .per-h2, .per-h2 b {
-        font-size: 3.8vw;
-    
+/*subundo ^ */
+
+
+@media (max-width: 900px) {
+
+    .per-direito,
+    .per-esquerdo {
+        justify-content: center;
+        padding: 0px 30px;
     }
 
-    .lay-frame2 {
-        width: 40vw;
-        height: 35vw;
-    }
 
-    .text1-pers span, .text2-pers p {
-        color: var(--colorNone);
-        font-size: 1.8vw;
-    }
-    .text2-pers span {
-        font-size: 2.1vw;
-    }
-    .fa-circle-check {
-        font-size: 2vw;
-    }
 }
 
 /* Para tablets e dispositivos de tamanho médio */
@@ -181,10 +206,106 @@ section {
 
 
 /* Para telas pequenas (celulares) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     body {
         font-size: 14px;
         /* Outros ajustes para telas pequenas */
     }
+
+    .per-ajust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .per-h2,
+    .per-h2 b {
+        font-size: 6.8vw;
+    }
+
+    .text1-pers span,
+    .text2-pers p {
+        color: var(--colorNone);
+        font-size: 2.8vw;
+    }
+
+    .fa-circle-check {
+        font-size: 5vw;
+    }
+
+    .txt2-ajsut-icon {
+        margin: 34px 0px;
+        width: 87%;
+    }
+
+    .text2-pers span {
+        font-size: 4.1vw;
+    }
+
+    .per-direito,
+    .per-esquerdo {
+        text-align: center;
+        width: 90%;
+        padding: 0px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text2-pers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lay-frame2 {
+        width: 61vw;
+        height: 54vw;
+    }
+
+    .sec-persuasivo .btn_white {
+        font-size: 5vw;
+        margin: 74px 0px 30px 0px;
+    }
 }
 
+
+@media (max-width: 550px) {
+    .per-h2, .per-h2 b {
+        font-size: 7.8vw;
+    }
+
+    .text1-pers span, .text2-pers p {
+        color: var(--colorNone);
+        font-size: 3.8vw;
+    }
+
+    .text2-pers span {
+        font-size: 5.1vw;
+    }
+
+    .lay-frame2 {
+        width: 75vw;
+        height: 66vw;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .per-h2, .per-h2 b {
+        font-size: 8.8vw;
+    }
+
+    .text1-pers span, .text2-pers p {
+        color: var(--colorNone);
+        font-size: 4.8vw;
+    }
+
+    .text2-pers span {
+        font-size: 6.1vw;
+    }
+
+    .fa-circle-check {
+        font-size: 6vw;
+    }
+}

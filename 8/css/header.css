@@ -439,11 +439,9 @@ header form p b {
         font-size: 1.5rem;
         width: 275px;
     }
-}
-
-@media (max-width: 340px) {
     header form input {
         font-size: 1rem;
         padding: 5px;
     }
 }
+
